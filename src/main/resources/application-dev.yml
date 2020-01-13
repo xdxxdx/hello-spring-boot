@@ -1,0 +1,23 @@
+#datasource
+spring:
+  #datasource
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/coffee?characterEncoding=utf8&useSSL=true
+    username: root
+    password: wonyen@1602
+    druid:
+      initial-size: 5
+      max-active: 20
+      min-idle: 5
+      filters: config,stat,wall,slf4j
+      filter:
+        config:
+          enabled: true
+      connection-properties: config.decrypt=true;druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;
+      test-on-borrow: true
+      test-on-return: true
+      test-while-idle: true
+
+

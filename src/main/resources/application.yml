@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  output:
+    ansi:
+      enabled: always
+  thymeleaf:
+    cache: false
+  profiles:
+    active:
+      dev
+  #允许用户自定义的类覆盖系统提供的类
+  main:
+    allow-bean-definition-overriding: true
+#日志
+logging:
+  #这种方法是使用xml的配置文件的形式配置，该xml配置文件规定了日志的格式，级别等信息
+  config: classpath:logback.xml
+  level:
+    com.xdx.hello.spring.boot.dao: trace
+xdx:
+    profiles:
+      active: debug
