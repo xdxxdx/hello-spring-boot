@@ -8,7 +8,7 @@ spring:
     cache: false
   profiles:
     active:
-      dev
+      test
   #允许用户自定义的类覆盖系统提供的类
   main:
     allow-bean-definition-overriding: true
@@ -18,6 +18,22 @@ logging:
   config: classpath:logback.xml
   level:
     com.xdx.hello.spring.boot.dao: trace
+mybatis:
+  #xml文件存放位置
+  mapper-locations: classpath*:/mapper/*.xml
+  #实体类存放位置
+  type-aliases-package: com.xdx.hello.spring.boot.entity
+  #类型转换类的存放位置
+  type-handlers-package: com.xdx.hello.spring.boot.handle
+  configuration:
+    #使用驼峰法
+    map-underscore-to-camel-case: true
+pagehelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
+  params: count=countSql
+  reasonable: true
+  page-size-zero: true
 xdx:
     profiles:
       active: debug

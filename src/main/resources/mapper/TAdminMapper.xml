@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xdx.hello.spring.boot.dao.TAdminMapper">
+  <resultMap id="BaseResultMap" type="com.xdx.hello.spring.boot.entity.TAdmin">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+  </resultMap>
+</mapper>
