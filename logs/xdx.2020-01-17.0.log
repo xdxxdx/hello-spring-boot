@@ -3230,3 +3230,53 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'create_time' cannot b
 23:32:46.172 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <==        Row: 19, 2020-01-17 21:43:00, 2020-01-17 23:32:43, i love you, hello spring
 23:32:46.173 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <==      Total: 1
 23:33:11.700 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+23:33:36.294 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 12780 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:33:36.304 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:33:37.942 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:33:38.957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:33:38.970 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:33:38.971 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:33:38.971 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:33:39.104 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:33:39.105 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2603 ms
+23:33:39.216 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:33:40.277 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:33:40.528 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:33:40.532 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:33:40.544 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:33:40.546 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:33:40.560 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:33:40.562 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:33:40.575 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:33:40.576 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:33:40.586 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:33:40.590 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:33:41.306 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:33:41.582 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:33:41.610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:33:41.626 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 6.021 seconds (JVM running for 6.842)
+23:33:41.633 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:33:41.633 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - xdx,lqf
+23:33:41.640 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-01-17 23:33:39",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:779809646, ConnectTime:"2020-01-17 23:33:40", UseCount:0, LastActiveTime:"2020-01-17 23:33:40"},
+		{ID:310626851, ConnectTime:"2020-01-17 23:33:40", UseCount:0, LastActiveTime:"2020-01-17 23:33:40"},
+		{ID:1947201478, ConnectTime:"2020-01-17 23:33:40", UseCount:0, LastActiveTime:"2020-01-17 23:33:40"},
+		{ID:178658894, ConnectTime:"2020-01-17 23:33:40", UseCount:0, LastActiveTime:"2020-01-17 23:33:40"},
+		{ID:1933471223, ConnectTime:"2020-01-17 23:33:40", UseCount:0, LastActiveTime:"2020-01-17 23:33:40"}
+	]
+}
+23:33:41.652 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@733e6df7
+23:33:45.794 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:33:45.795 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:33:45.813 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+23:33:45.992 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_admin SET id = id,user_name = ?,pwd = ? WHERE id = ? 
+23:33:46.146 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: i love you(String), hello spring(String), 19(Long)
+23:33:46.150 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
