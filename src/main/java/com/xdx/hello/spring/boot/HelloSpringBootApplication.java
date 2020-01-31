@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.spring.annotation.MapperScan;
@@ -19,7 +20,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 @RestController
@@ -60,5 +63,15 @@ public class HelloSpringBootApplication implements CommandLineRunner{
     }
     private void testMybatis(){
 
+    }
+@CrossOrigin
+@RequestMapping("/user/login")
+    public Map<String,Object> loginTest(){
+        HashMap<String, Object> map = new HashMap<String, Object>();
+        map.put("code",20000);
+        HashMap<String, Object> innerMap = new HashMap<>();
+        innerMap.put("token","admin-token");
+        map.put("data",innerMap);
+        return map;
     }
 }
