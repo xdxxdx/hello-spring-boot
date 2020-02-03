@@ -65,13 +65,14 @@ public class HelloSpringBootApplication implements CommandLineRunner{
 
     }
 @CrossOrigin
-@RequestMapping("/user/login")
+@RequestMapping("/vue-element-admin/user/login")
     public Map<String,Object> loginTest(){
         HashMap<String, Object> map = new HashMap<String, Object>();
         map.put("code",20000);
         HashMap<String, Object> innerMap = new HashMap<>();
         innerMap.put("token","admin-token");
         map.put("data",innerMap);
+        log.info("调用登录接口");
         return map;
     }
 }
