@@ -1,0 +1,1538 @@
+16:31:16.034 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 16404 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:31:16.052 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:31:17.187 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:31:17.701 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:31:17.716 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:31:17.717 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:31:17.717 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:31:17.842 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:31:17.842 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1416 ms
+16:31:17.923 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:31:18.593 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:31:18.852 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:31:18.855 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:31:18.867 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:31:18.869 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:31:18.880 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:31:18.881 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:31:18.891 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:31:18.892 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:31:18.902 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:31:18.905 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:31:19.736 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:31:19.760 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:31:19.763 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.526 seconds (JVM running for 5.975)
+16:31:19.765 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:31:19.766 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:31:17",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:2000802630, ConnectTime:"2020-02-22 16:31:18", UseCount:0, LastActiveTime:"2020-02-22 16:31:18"},
+		{ID:1380271191, ConnectTime:"2020-02-22 16:31:18", UseCount:0, LastActiveTime:"2020-02-22 16:31:18"},
+		{ID:1093707336, ConnectTime:"2020-02-22 16:31:18", UseCount:0, LastActiveTime:"2020-02-22 16:31:18"},
+		{ID:1644128841, ConnectTime:"2020-02-22 16:31:18", UseCount:0, LastActiveTime:"2020-02-22 16:31:18"},
+		{ID:417160915, ConnectTime:"2020-02-22 16:31:18", UseCount:0, LastActiveTime:"2020-02-22 16:31:18"}
+	]
+}
+16:31:19.772 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@18dd5ed3
+16:38:46.505 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:38:46.505 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:38:46.516 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+16:38:46.532 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:38:46.680 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:38:46.767 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:38:46.793 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:38:46.795 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:38:46.796 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:38:46.808 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:38:46.809 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:38:46.810 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:38:46.811 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:38:46.811 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:38:46.894 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:38:46.895 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - DB851DF01B4AE98B801996E54D869BC5
+16:38:47.273 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:38:47.280 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:38:47.436 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:38:47.437 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:38:47.932 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /vue-element-admin/transaction/list
+16:38:47.933 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:38:57.049 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:38:57.111 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:38:57.113 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:38:57.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:38:57.123 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:38:57.123 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:38:57.125 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:38:57.131 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:38:57.132 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:38:57.133 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:38:57.135 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:38:57.135 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:38:57.144 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:38:57.145 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:38:57.146 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:38:57.147 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:38:57.147 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:39:02.588 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:39:02.607 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:39:02.613 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:39:02.615 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:39:05.052 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:39:05.059 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:39:05.060 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:39:05.061 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:39:05.061 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:39:05.062 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:39:05.063 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:39:05.064 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:39:05.065 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:39:05.066 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:39:05.068 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:39:05.069 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:39:05.078 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:39:05.079 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:39:05.080 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:39:05.080 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:39:05.080 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:39:08.311 [http-nio-8080-exec-9] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:39:08.319 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:39:08.320 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:39:08.321 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:39:08.321 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:39:08.321 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:39:08.322 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:39:08.323 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:39:08.325 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:39:08.326 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:39:08.327 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:39:08.328 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:39:08.337 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:39:08.338 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:39:08.339 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:39:08.339 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:39:08.339 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:40:26.934 [http-nio-8080-exec-10] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:40:26.942 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:40:26.944 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:40:26.946 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:41:57.885 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 18780 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:41:57.889 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:41:58.698 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:41:59.196 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:41:59.206 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:41:59.206 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:41:59.207 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:41:59.324 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:41:59.325 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1373 ms
+16:41:59.402 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:42:00.056 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:42:00.313 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:42:00.316 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:42:00.327 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:42:00.328 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:42:00.338 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:42:00.340 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:42:00.351 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:42:00.352 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:42:00.361 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:42:00.365 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:42:01.269 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:42:01.299 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:42:01.303 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.968 seconds (JVM running for 6.936)
+16:42:01.304 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:42:01.305 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:41:59",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:471275334, ConnectTime:"2020-02-22 16:42:00", UseCount:0, LastActiveTime:"2020-02-22 16:42:00"},
+		{ID:2042086224, ConnectTime:"2020-02-22 16:42:00", UseCount:0, LastActiveTime:"2020-02-22 16:42:00"},
+		{ID:1483159551, ConnectTime:"2020-02-22 16:42:00", UseCount:0, LastActiveTime:"2020-02-22 16:42:00"},
+		{ID:1289218451, ConnectTime:"2020-02-22 16:42:00", UseCount:0, LastActiveTime:"2020-02-22 16:42:00"},
+		{ID:1751018088, ConnectTime:"2020-02-22 16:42:00", UseCount:0, LastActiveTime:"2020-02-22 16:42:00"}
+	]
+}
+16:42:01.311 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@685e6a68
+16:42:13.736 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:42:13.736 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:42:13.746 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+16:42:13.766 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:42:19.882 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:42:20.023 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:42:20.117 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:42:20.142 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:42:20.144 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:42:20.145 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:42:20.156 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:42:20.157 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:42:20.158 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:42:20.159 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:42:20.160 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:42:20.226 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:42:20.226 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - 52C2B7D271370B175152C976B47CDE99
+16:42:20.533 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:42:20.540 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:42:20.769 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:42:20.855 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:42:20.858 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:42:20.859 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:42:20.860 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:42:20.860 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:42:20.863 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:42:20.869 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:42:20.871 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:42:20.871 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:42:20.873 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:42:20.873 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:42:20.885 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:42:20.886 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:42:20.887 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:42:20.887 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:42:20.887 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:42:26.277 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:42:26.292 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:42:26.299 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:42:26.301 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:43:36.341 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:43:36.354 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:43:36.354 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:43:36.356 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:43:36.357 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:43:36.357 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:43:36.358 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:43:36.359 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:43:36.360 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:43:36.361 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:43:36.363 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:43:36.364 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:43:36.375 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:43:36.376 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:43:36.377 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:43:36.377 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:43:36.377 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:43:40.525 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:43:40.532 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:43:40.533 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:43:40.534 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:44:32.368 [http-nio-8080-exec-9] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:44:32.377 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:44:32.377 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:44:32.379 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:44:32.379 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:44:32.379 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:44:32.381 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:44:32.382 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:44:32.386 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:44:32.387 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:44:32.388 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:44:32.389 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:44:32.401 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:44:32.402 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:44:32.403 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:44:32.404 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:44:32.404 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:44:35.803 [http-nio-8080-exec-10] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:44:35.824 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:44:35.825 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:44:35.826 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:44:56.818 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+16:44:56.823 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:45:06.285 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 18480 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:45:06.290 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:45:07.296 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:45:07.824 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:45:07.834 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:45:07.835 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:45:07.835 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:45:07.956 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:45:07.956 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1602 ms
+16:45:08.045 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:45:08.714 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:45:08.979 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:45:08.982 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:45:08.994 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:45:08.996 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:45:09.006 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:45:09.008 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:45:09.018 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:45:09.020 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:45:09.031 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:45:09.035 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:45:09.940 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:45:09.968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:45:09.972 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.244 seconds (JVM running for 5.552)
+16:45:09.974 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:45:09.975 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:45:08",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:695980401, ConnectTime:"2020-02-22 16:45:08", UseCount:0, LastActiveTime:"2020-02-22 16:45:08"},
+		{ID:294436333, ConnectTime:"2020-02-22 16:45:08", UseCount:0, LastActiveTime:"2020-02-22 16:45:08"},
+		{ID:80488159, ConnectTime:"2020-02-22 16:45:09", UseCount:0, LastActiveTime:"2020-02-22 16:45:09"},
+		{ID:2017997342, ConnectTime:"2020-02-22 16:45:09", UseCount:0, LastActiveTime:"2020-02-22 16:45:09"},
+		{ID:256869439, ConnectTime:"2020-02-22 16:45:09", UseCount:0, LastActiveTime:"2020-02-22 16:45:09"}
+	]
+}
+16:45:09.982 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f4f843f
+16:45:19.335 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:45:19.335 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:45:19.345 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+16:45:19.362 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:45:25.342 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:45:25.490 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:45:25.580 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:45:25.605 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:45:25.607 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:45:25.609 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:45:25.620 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:45:25.621 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:45:25.622 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:45:25.623 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:45:25.623 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:45:25.691 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:45:25.692 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - A28289D7E3503B63F108AAC320C286F8
+16:45:26.018 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:45:26.024 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:45:26.261 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:45:26.344 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:45:26.347 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:45:26.348 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:45:26.348 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:45:26.349 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:45:26.352 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:45:26.357 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:45:26.359 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:45:26.360 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:45:26.361 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:45:26.362 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:45:26.371 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:45:26.371 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:45:26.373 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:45:26.373 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:45:26.373 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:45:31.194 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:45:31.211 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:45:31.218 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:45:31.220 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:46:44.826 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+16:46:44.831 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:46:51.829 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 17660 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:46:51.831 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:46:52.880 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:46:53.404 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:46:53.414 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:46:53.415 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:46:53.415 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:46:53.534 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:46:53.534 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1646 ms
+16:46:53.617 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:46:54.337 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:46:54.537 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:46:54.540 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:46:54.555 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:46:54.557 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:46:54.569 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:46:54.570 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:46:54.582 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:46:54.584 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:46:54.596 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:46:54.600 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:46:55.516 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:46:55.544 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:46:55.548 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.231 seconds (JVM running for 5.634)
+16:46:55.549 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:46:55.550 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:46:53",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1040493509, ConnectTime:"2020-02-22 16:46:54", UseCount:0, LastActiveTime:"2020-02-22 16:46:54"},
+		{ID:269016862, ConnectTime:"2020-02-22 16:46:54", UseCount:0, LastActiveTime:"2020-02-22 16:46:54"},
+		{ID:2128686424, ConnectTime:"2020-02-22 16:46:54", UseCount:0, LastActiveTime:"2020-02-22 16:46:54"},
+		{ID:242416388, ConnectTime:"2020-02-22 16:46:54", UseCount:0, LastActiveTime:"2020-02-22 16:46:54"},
+		{ID:355677068, ConnectTime:"2020-02-22 16:46:54", UseCount:0, LastActiveTime:"2020-02-22 16:46:54"}
+	]
+}
+16:46:55.557 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@1533338c
+16:47:00.526 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:47:00.527 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:47:00.537 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+16:47:00.556 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:47:05.190 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:47:05.343 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:47:05.457 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:47:05.482 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:47:05.483 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:47:05.485 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:47:05.497 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:47:05.497 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:47:05.499 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:47:05.499 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:47:05.500 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:47:05.567 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:47:05.568 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - F87BAA51E3EF3A50A9BDFC63E375F1A2
+16:47:05.891 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:47:05.898 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:47:06.130 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:47:06.210 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:47:06.214 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:47:06.215 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:47:06.216 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:47:06.216 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:47:06.219 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:47:06.223 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:47:06.225 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:47:06.226 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:47:06.228 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:47:06.228 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:47:06.238 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:47:06.239 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:47:06.240 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:47:06.240 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:47:06.240 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:47:09.792 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:47:09.811 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:47:09.820 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 0(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:47:09.821 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:48:20.181 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+16:48:20.185 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:48:27.284 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 16820 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:48:27.287 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:48:28.196 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:48:28.698 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:48:28.708 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:48:28.709 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:48:28.709 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:48:28.828 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:48:28.828 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1474 ms
+16:48:28.904 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:48:29.550 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:48:29.828 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:48:29.831 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:48:29.842 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:48:29.843 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:48:29.854 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:48:29.855 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:48:29.866 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:48:29.867 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:48:29.879 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:48:29.882 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:48:30.787 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:48:30.815 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:48:30.819 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.431 seconds (JVM running for 5.822)
+16:48:30.820 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:48:30.821 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:48:28",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:562952150, ConnectTime:"2020-02-22 16:48:29", UseCount:0, LastActiveTime:"2020-02-22 16:48:29"},
+		{ID:693831648, ConnectTime:"2020-02-22 16:48:29", UseCount:0, LastActiveTime:"2020-02-22 16:48:29"},
+		{ID:1426407297, ConnectTime:"2020-02-22 16:48:29", UseCount:0, LastActiveTime:"2020-02-22 16:48:29"},
+		{ID:535708280, ConnectTime:"2020-02-22 16:48:29", UseCount:0, LastActiveTime:"2020-02-22 16:48:29"},
+		{ID:1360209172, ConnectTime:"2020-02-22 16:48:29", UseCount:0, LastActiveTime:"2020-02-22 16:48:29"}
+	]
+}
+16:48:30.828 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@51132514
+16:48:43.906 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:48:43.907 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:48:43.917 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+16:48:43.937 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:48:48.992 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:48:49.168 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:48:49.261 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:48:49.286 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:48:49.288 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:48:49.290 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:48:49.300 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:48:49.301 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:48:49.302 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:48:49.303 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:48:49.303 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:48:49.421 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:48:49.422 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - 5AB777E15B1C861CBEAA104A5C04517B
+16:48:49.764 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:48:49.770 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:48:50.002 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:48:50.081 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:48:50.084 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:48:50.086 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:48:50.086 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:48:50.086 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:48:50.089 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:48:50.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:48:50.096 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:48:50.097 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:48:50.098 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, null, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:48:50.099 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:48:50.108 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:48:50.109 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:48:50.110 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:48:50.110 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:48:50.111 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:48:53.640 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden
+16:49:01.472 [http-nio-8080-exec-6] INFO  c.x.h.s.b.s.impl.UserServiceImpl - 1xxxxxxxxx
+16:49:11.555 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,create_time = ?,is_del = ?,user_no = ?,user_name = ?,phone = ?,sex = ?,birthday = ?,address = ?,join_time = ?,balance = ?,score = ? WHERE id = ? 
+16:49:11.576 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-17 15:50:44.0(Timestamp), 1(Integer), A00002(String), 小石头(String), 15260220398(String), 1(Integer), 2020-02-17 15:50:41.0(Timestamp), 福建厦门集美区(String), 2020-02-17 15:50:43.0(Timestamp), 0(Long), 0(Integer), 1(Long)
+16:49:11.593 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:50:08.576 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+16:50:08.581 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:50:15.888 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 17004 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:50:15.892 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:50:17.120 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:50:17.531 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:50:17.540 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:50:17.540 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:50:17.541 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:50:17.657 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:50:17.658 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1708 ms
+16:50:17.724 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:50:18.347 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:50:18.602 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:50:18.605 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:50:18.618 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:50:18.619 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:50:18.630 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:50:18.632 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:50:18.643 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:50:18.644 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:50:18.654 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:50:18.658 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:50:19.456 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:50:19.478 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:50:19.481 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.095 seconds (JVM running for 5.29)
+16:50:19.482 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:50:19.483 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:50:17",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:215911532, ConnectTime:"2020-02-22 16:50:18", UseCount:0, LastActiveTime:"2020-02-22 16:50:18"},
+		{ID:390537668, ConnectTime:"2020-02-22 16:50:18", UseCount:0, LastActiveTime:"2020-02-22 16:50:18"},
+		{ID:898810308, ConnectTime:"2020-02-22 16:50:18", UseCount:0, LastActiveTime:"2020-02-22 16:50:18"},
+		{ID:841894382, ConnectTime:"2020-02-22 16:50:18", UseCount:0, LastActiveTime:"2020-02-22 16:50:18"},
+		{ID:1256918571, ConnectTime:"2020-02-22 16:50:18", UseCount:0, LastActiveTime:"2020-02-22 16:50:18"}
+	]
+}
+16:50:19.488 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4aeb0e2b
+16:50:29.854 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:50:29.855 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:50:29.864 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+16:50:29.881 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:50:34.931 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:50:35.051 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:50:35.133 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:50:35.157 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:50:35.159 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:50:35.161 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:50:35.171 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:50:35.171 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:50:35.173 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:50:35.173 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:50:35.174 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:50:35.237 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:50:35.237 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - C49AFA67112C3A68D1D6E6B92E54FC23
+16:50:35.552 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:50:35.558 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:50:35.783 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:50:35.848 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:50:35.851 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:50:35.852 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:50:35.852 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 1
+16:50:35.852 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:50:35.855 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:50:35.860 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:50:35.862 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:50:35.863 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:50:35.863 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 1
+16:50:35.873 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:50:35.874 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:50:35.875 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:50:35.875 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+16:50:35.876 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:56:40.509 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 18324 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+16:56:40.512 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+16:56:41.563 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+16:56:41.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+16:56:42.011 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:56:42.011 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:56:42.011 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:56:42.118 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:56:42.119 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1555 ms
+16:56:42.184 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:56:42.823 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:56:43.062 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:56:43.065 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:56:43.076 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:56:43.078 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:56:43.088 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:56:43.090 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:56:43.100 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:56:43.101 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+16:56:43.111 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+16:56:43.116 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:56:43.899 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:56:43.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+16:56:43.924 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.014 seconds (JVM running for 5.213)
+16:56:43.925 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+16:56:43.926 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 16:56:42",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:2023501911, ConnectTime:"2020-02-22 16:56:43", UseCount:0, LastActiveTime:"2020-02-22 16:56:43"},
+		{ID:966005897, ConnectTime:"2020-02-22 16:56:43", UseCount:0, LastActiveTime:"2020-02-22 16:56:43"},
+		{ID:1868366224, ConnectTime:"2020-02-22 16:56:43", UseCount:0, LastActiveTime:"2020-02-22 16:56:43"},
+		{ID:1731406622, ConnectTime:"2020-02-22 16:56:43", UseCount:0, LastActiveTime:"2020-02-22 16:56:43"},
+		{ID:2117382439, ConnectTime:"2020-02-22 16:56:43", UseCount:0, LastActiveTime:"2020-02-22 16:56:43"}
+	]
+}
+16:56:43.932 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7e34b127
+16:56:53.183 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:56:53.183 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:56:53.193 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+16:56:53.208 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:56:58.137 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+16:56:58.265 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+16:56:58.359 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+16:56:58.381 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:56:58.383 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:56:58.384 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:56:58.395 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+16:56:58.395 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+16:56:58.397 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+16:56:58.397 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+16:56:58.398 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+16:56:58.459 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+16:56:58.459 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - C1B268E5BA90246A9D451A5469BDFBC8
+16:56:58.776 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+16:56:58.781 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+16:56:59.012 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:56:59.077 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:56:59.079 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:56:59.081 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:56:59.081 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+16:56:59.081 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:56:59.083 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:56:59.088 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:56:59.090 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:56:59.091 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:56:59.092 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-17 15:50:44, 2020-02-22 16:55:27, 0, A00002, 小石头, 15260220398, 1, 2020-02-17 15:50:41, 福建厦门集美区, 2020-02-17 15:50:43, 0, 0
+16:56:59.092 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+16:56:59.101 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:56:59.102 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:56:59.103 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:56:59.103 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+16:56:59.103 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+16:57:03.421 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/hidden/1
+16:57:03.429 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_user SET id = id,is_del = ? WHERE id = ? 
+16:57:03.433 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 1(Integer), 1(Long)
+16:57:03.438 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+16:57:06.091 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/user/lists
+16:57:06.100 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_user WHERE (is_del = ?) 
+16:57:06.100 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+16:57:06.102 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+16:57:06.102 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 1
+16:57:06.102 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+16:57:06.103 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,user_no,user_name,phone,sex,birthday,address,join_time,balance,score FROM t_user WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+16:57:06.104 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+16:57:06.107 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, user_no, user_name, phone, sex, birthday, address, join_time, balance, score
+16:57:06.107 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-17 17:15:31, 2020-02-18 18:33:03, 0, A00001, 谢东祥, 15260220397, 0, 2020-02-17 17:15:16, 福建厦门海沧区, 2020-02-17 17:15:19, 8399, 8299
+16:57:06.108 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 1
+16:57:06.117 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_user WHERE ( is_del = ? ) 
+16:57:06.118 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+16:57:06.119 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+16:57:06.120 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+16:57:06.120 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:04:37.751 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 19788 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:04:37.754 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:04:38.891 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:04:39.606 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:04:39.623 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:04:39.624 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:04:39.624 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:04:39.773 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:04:39.774 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1953 ms
+18:04:39.897 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:04:40.751 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:04:40.997 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:04:41.001 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:04:41.013 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:04:41.015 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:04:41.028 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:04:41.030 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:04:41.041 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:04:41.043 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:04:41.053 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:04:41.057 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:04:41.738 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.xdx.hello.spring.boot.service.CategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:04:41.739 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+18:04:41.744 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+18:04:41.748 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+18:04:41.761 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:04:41.899 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'categoryController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.xdx.hello.spring.boot.service.CategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xdx.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:46)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.xdx.hello.spring.boot.service.CategoryService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 common frames omitted
+18:09:13.702 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 19768 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:09:13.705 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:09:14.747 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:09:15.296 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:09:15.306 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:09:15.307 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:09:15.307 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:09:15.422 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:09:15.422 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1644 ms
+18:09:15.493 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:09:16.145 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:09:16.410 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:09:16.413 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:09:16.425 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:09:16.427 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:09:16.440 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:09:16.441 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:09:16.453 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:09:16.454 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:09:16.464 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:09:16.468 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:09:17.009 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#adminAdd(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+18:09:17.010 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+18:09:17.014 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+18:09:17.016 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+18:09:17.027 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:09:17.037 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#adminAdd(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xdx.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:46)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#adminAdd(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:600)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:350)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+18:12:02.884 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 18492 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:12:02.887 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:12:03.889 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:12:04.317 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:12:04.337 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:12:04.338 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:12:04.338 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:12:04.449 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:12:04.450 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1510 ms
+18:12:04.520 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:12:05.175 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:12:05.414 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:12:05.417 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:12:05.429 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:12:05.430 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:12:05.440 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:12:05.442 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:12:05.451 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:12:05.452 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:12:05.461 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:12:05.465 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:12:05.976 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+18:12:05.977 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+18:12:05.981 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+18:12:05.984 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+18:12:05.993 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:12:06.003 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xdx.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:46)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:600)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:350)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+18:13:48.353 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 19748 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:13:48.356 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:13:49.425 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:13:49.879 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:13:49.888 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:13:49.889 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:13:49.889 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:13:50.011 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:13:50.012 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1591 ms
+18:13:50.079 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:13:50.712 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:13:50.952 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:13:50.955 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:13:50.966 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:13:50.968 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:13:50.978 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:13:50.979 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:13:50.989 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:13:50.991 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:13:51.000 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:13:51.003 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:13:51.510 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+18:13:51.511 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+18:13:51.515 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+18:13:51.517 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+18:13:51.527 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:13:51.536 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [com/xdx/hello/spring/boot/common/config/BackInterceptorConfig.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.xdx.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:46)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'balanceController' method 
+com.xdx.hello.spring.boot.controller.BalanceController#add(Object)
+to {POST /balance/add}: There is already 'balanceController' bean method
+com.xdx.hello.spring.boot.controller.BalanceController#balanceAdd(TBalanceLog) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:600)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:350)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 16 common frames omitted
+18:14:37.022 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 19012 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:14:37.024 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:14:38.170 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:14:38.573 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:14:38.581 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:14:38.582 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:14:38.582 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:14:38.698 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:14:38.699 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1582 ms
+18:14:38.765 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:14:39.409 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:14:39.658 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:14:39.661 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:14:39.672 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:14:39.674 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:14:39.685 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:14:39.686 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:14:39.697 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:14:39.698 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:14:39.708 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:14:39.712 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:14:40.516 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:14:40.538 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:14:40.541 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.011 seconds (JVM running for 5.156)
+18:14:40.542 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+18:14:40.543 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 18:14:38",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1299206418, ConnectTime:"2020-02-22 18:14:39", UseCount:0, LastActiveTime:"2020-02-22 18:14:39"},
+		{ID:1493657028, ConnectTime:"2020-02-22 18:14:39", UseCount:0, LastActiveTime:"2020-02-22 18:14:39"},
+		{ID:424188711, ConnectTime:"2020-02-22 18:14:39", UseCount:0, LastActiveTime:"2020-02-22 18:14:39"},
+		{ID:1651318806, ConnectTime:"2020-02-22 18:14:39", UseCount:0, LastActiveTime:"2020-02-22 18:14:39"},
+		{ID:760878472, ConnectTime:"2020-02-22 18:14:39", UseCount:0, LastActiveTime:"2020-02-22 18:14:39"}
+	]
+}
+18:14:40.549 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2d5a1588
+18:14:46.782 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:46.782 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:14:46.789 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+18:14:46.804 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+18:14:46.928 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+18:14:47.013 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+18:14:47.037 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+18:14:47.038 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+18:14:47.040 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+18:14:47.051 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+18:14:47.051 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+18:14:47.053 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+18:14:47.053 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+18:14:47.054 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+18:14:47.130 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+18:14:47.131 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - F014768A6F4BC76EEB7317AC3D5C0748
+18:14:47.490 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+18:14:47.511 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+18:14:47.731 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:14:47.799 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:14:47.801 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:14:47.804 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:14:47.804 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 0
+18:14:47.805 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:14:47.815 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:14:47.815 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:14:47.817 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:14:47.817 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 0
+18:14:47.817 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:15:29.298 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+18:15:29.299 [http-nio-8080-exec-5] INFO  c.x.h.s.b.controller.AdminController - F014768A6F4BC76EEB7317AC3D5C0748
+18:15:29.680 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+18:15:29.681 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+18:15:29.925 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:15:29.940 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:15:29.941 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:15:29.944 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:15:29.944 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 0
+18:15:29.944 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:15:29.953 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:15:29.954 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:15:29.955 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:15:29.955 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 0
+18:15:29.955 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:16:35.344 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+18:16:35.345 [http-nio-8080-exec-8] INFO  c.x.h.s.b.controller.AdminController - F014768A6F4BC76EEB7317AC3D5C0748
+18:16:35.920 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+18:16:35.921 [http-nio-8080-exec-9] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+18:16:36.185 [http-nio-8080-exec-10] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:16:36.193 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:16:36.194 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:16:36.195 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:16:36.195 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 0
+18:16:36.196 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:16:36.205 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:16:36.206 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:16:36.209 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:16:36.209 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 0
+18:16:36.210 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:16:59.806 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/add
+18:16:59.815 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_category ( id,category_name ) VALUES( ?,? ) 
+18:16:59.821 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 咖啡豆(String)
+18:16:59.825 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+18:16:59.829 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+18:16:59.831 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+18:16:59.831 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 1
+18:16:59.831 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+18:16:59.876 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:16:59.882 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:16:59.883 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:16:59.884 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:16:59.884 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 1
+18:16:59.884 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:16:59.886 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:16:59.891 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:16:59.893 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:16:59.893 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, null, 0, 咖啡豆
+18:16:59.894 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 1
+18:16:59.902 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:16:59.903 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:16:59.904 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:16:59.905 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+18:16:59.905 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:17:10.264 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/1
+18:17:10.273 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+18:17:10.278 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:16:59.0(Timestamp), 0(Integer), 咖啡豆1(String), 1(Long)
+18:17:10.283 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+18:17:12.272 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:17:12.278 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:17:12.278 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:17:12.280 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:17:12.280 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 1
+18:17:12.280 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:17:12.282 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:17:12.282 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:17:12.284 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:17:12.284 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆1
+18:17:12.285 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 1
+18:17:12.294 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:17:12.295 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:17:12.296 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:17:12.297 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+18:17:12.297 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:17:18.147 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/1
+18:17:18.152 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,update_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+18:17:18.154 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:16:59.0(Timestamp), 2020-02-22 18:17:10.0(Timestamp), 0(Integer), 咖啡豆(String), 1(Long)
+18:17:18.158 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+18:17:35.277 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/add
+18:17:35.281 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_category ( id,category_name ) VALUES( ?,? ) 
+18:17:35.282 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 挂耳(String)
+18:17:35.287 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+18:17:35.287 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+18:17:35.289 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+18:17:35.289 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 2
+18:17:35.289 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+18:17:35.320 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:17:35.326 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:17:35.327 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:17:35.328 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:17:35.328 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 2
+18:17:35.328 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:17:35.329 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:17:35.330 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:17:35.332 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:17:35.332 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:17:35.333 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:17:35.333 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 2
+18:17:35.341 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:17:35.342 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:17:35.343 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:17:35.344 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+18:17:35.344 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:17:45.439 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/add
+18:17:45.446 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_category ( id,category_name ) VALUES( ?,? ) 
+18:17:45.447 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 咖啡设备(String)
+18:17:45.451 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+18:17:45.452 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+18:17:45.454 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+18:17:45.454 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 3
+18:17:45.454 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+18:17:45.517 [http-nio-8080-exec-9] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:17:45.523 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:17:45.524 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:17:45.525 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:17:45.525 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 3
+18:17:45.526 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:17:45.527 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:17:45.527 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:17:45.528 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:17:45.529 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+18:17:45.529 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:17:45.530 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:17:45.531 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 3
+18:17:45.539 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:17:45.539 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:17:45.540 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:17:45.540 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 3
+18:17:45.541 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:17:56.912 [http-nio-8080-exec-10] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/add
+18:17:56.916 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_category ( id,category_name ) VALUES( ?,? ) 
+18:17:56.917 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 咖啡玻璃器皿(String)
+18:17:56.922 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+18:17:56.923 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+18:17:56.924 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+18:17:56.924 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 4
+18:17:56.924 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+18:17:56.977 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:17:56.983 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:17:56.983 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:17:56.984 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:17:56.985 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 4
+18:17:56.985 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:17:56.986 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:17:56.987 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:17:56.988 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:17:56.988 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+18:17:56.989 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+18:17:56.990 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:17:56.991 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:17:56.991 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 4
+18:17:57.000 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:17:57.001 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:17:57.002 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:17:57.002 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 4
+18:17:57.002 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:18:07.828 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/add
+18:18:07.834 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_category ( id,category_name ) VALUES( ?,? ) 
+18:18:07.834 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 活动茶歇(String)
+18:18:07.839 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+18:18:07.839 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+18:18:07.840 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+18:18:07.840 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 5
+18:18:07.840 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+18:18:07.872 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:18:07.878 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:18:07.879 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:18:07.880 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:18:07.880 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+18:18:07.880 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:18:07.881 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:18:07.881 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:18:07.883 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:18:07.883 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+18:18:07.883 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+18:18:07.884 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+18:18:07.885 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:18:07.885 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:18:07.886 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+18:18:07.893 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:18:07.894 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:18:07.895 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:18:07.895 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+18:18:07.895 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:19:05.494 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:19:05.501 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:19:05.501 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:19:05.502 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:19:05.502 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+18:19:05.502 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:19:05.503 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:19:05.504 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:19:05.506 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:19:05.506 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+18:19:05.506 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+18:19:05.507 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+18:19:05.507 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:19:05.507 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:19:05.508 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+18:19:05.515 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:19:05.516 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:19:05.517 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:19:05.517 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+18:19:05.517 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+18:19:13.041 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+18:19:13.048 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+18:19:13.049 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+18:19:13.050 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+18:19:13.051 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+18:19:13.051 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+18:19:13.052 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+18:19:13.052 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+18:19:13.054 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+18:19:13.054 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+18:19:13.055 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+18:19:13.055 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+18:19:13.056 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+18:19:13.056 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+18:19:13.056 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+18:19:13.064 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+18:19:13.065 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+18:19:13.066 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+18:19:13.066 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+18:19:13.066 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+19:15:58.040 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 21024 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+19:15:58.042 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+19:15:58.843 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+19:15:59.281 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:15:59.290 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:15:59.290 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:15:59.291 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+19:15:59.397 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:15:59.398 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1254 ms
+19:15:59.462 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+19:16:00.092 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:16:00.339 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:16:00.342 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:16:00.354 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:16:00.355 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:16:00.366 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:16:00.368 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:16:00.380 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:16:00.381 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:16:00.391 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:16:00.394 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+19:16:01.253 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:16:01.276 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:16:01.279 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.321 seconds (JVM running for 5.624)
+19:16:01.280 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+19:16:01.282 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 19:15:59",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1058708051, ConnectTime:"2020-02-22 19:16:00", UseCount:0, LastActiveTime:"2020-02-22 19:16:00"},
+		{ID:480498267, ConnectTime:"2020-02-22 19:16:00", UseCount:0, LastActiveTime:"2020-02-22 19:16:00"},
+		{ID:36205461, ConnectTime:"2020-02-22 19:16:00", UseCount:0, LastActiveTime:"2020-02-22 19:16:00"},
+		{ID:1398428044, ConnectTime:"2020-02-22 19:16:00", UseCount:0, LastActiveTime:"2020-02-22 19:16:00"},
+		{ID:955875766, ConnectTime:"2020-02-22 19:16:00", UseCount:0, LastActiveTime:"2020-02-22 19:16:00"}
+	]
+}
+19:16:01.288 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@38f981b6
+19:16:18.285 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:16:18.286 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:16:18.297 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+19:16:18.316 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+19:16:23.850 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+19:16:23.981 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+19:16:24.079 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+19:16:24.100 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:16:24.101 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:16:24.103 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:16:24.114 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+19:16:24.115 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+19:16:24.116 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:16:24.117 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:16:24.117 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:16:24.181 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+19:16:24.181 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - BC424FB8BAF0DC722A324044333A5F6B
+19:16:24.531 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+19:16:24.537 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+19:16:24.746 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+19:16:24.824 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+19:16:24.827 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+19:16:24.829 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+19:16:24.829 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+19:16:24.829 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+19:16:24.832 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+19:16:24.836 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+19:16:24.837 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+19:16:24.838 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+19:16:24.839 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+19:16:24.839 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+19:16:24.840 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+19:16:24.840 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+19:16:24.841 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+19:16:24.850 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+19:16:24.851 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+19:16:24.852 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+19:16:24.852 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+19:16:24.852 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+19:16:30.600 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/5
+19:16:30.613 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:16:30.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:18:07.0(Timestamp), 0(Integer), 活动茶歇(String), 5(Long)
+19:16:30.620 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:16:45.861 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/4
+19:16:45.866 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:16:45.867 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:56.0(Timestamp), 0(Integer), 咖啡玻璃器皿(String), 4(Long)
+19:16:45.870 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:16:56.637 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/3
+19:16:56.643 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:16:56.644 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:45.0(Timestamp), 0(Integer), 咖啡设备(String), 3(Long)
+19:16:56.645 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:21:56.699 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 21148 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+19:21:56.702 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+19:21:57.823 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+19:21:58.498 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:21:58.512 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:21:58.513 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:21:58.513 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+19:21:58.656 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:21:58.657 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1890 ms
+19:21:58.778 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+19:21:59.635 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:21:59.871 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:21:59.875 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:21:59.887 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:21:59.889 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:21:59.901 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:21:59.903 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:21:59.914 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:21:59.916 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:21:59.927 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:21:59.931 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+19:22:01.339 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:22:01.367 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:22:01.371 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.347 seconds (JVM running for 7.119)
+19:22:01.373 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+19:22:01.374 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 19:21:58",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1714153975, ConnectTime:"2020-02-22 19:21:59", UseCount:0, LastActiveTime:"2020-02-22 19:21:59"},
+		{ID:1231205406, ConnectTime:"2020-02-22 19:21:59", UseCount:0, LastActiveTime:"2020-02-22 19:21:59"},
+		{ID:1340928776, ConnectTime:"2020-02-22 19:21:59", UseCount:0, LastActiveTime:"2020-02-22 19:21:59"},
+		{ID:1652734453, ConnectTime:"2020-02-22 19:21:59", UseCount:0, LastActiveTime:"2020-02-22 19:21:59"},
+		{ID:1532989443, ConnectTime:"2020-02-22 19:21:59", UseCount:0, LastActiveTime:"2020-02-22 19:21:59"}
+	]
+}
+19:22:01.381 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5b5f9003
+19:22:15.943 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:22:15.943 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:22:15.956 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+19:22:15.983 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/5
+19:22:22.009 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+19:22:22.226 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+19:22:22.413 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+19:22:22.451 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:22:22.453 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:22:22.455 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:22:22.470 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+19:22:22.471 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+19:22:22.473 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:22:22.474 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:22:22.474 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:22:22.566 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+19:22:22.567 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - F6D06CEEEF42087E8CB36DE2B5A65C47
+19:22:22.891 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+19:22:22.900 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+19:22:23.104 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+19:22:23.265 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+19:22:23.269 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+19:22:23.271 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+19:22:23.271 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+19:22:23.272 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+19:22:23.275 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+19:22:23.285 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+19:22:23.287 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+19:22:23.287 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+19:22:23.288 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, null, 0, 咖啡玻璃器皿
+19:22:23.289 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+19:22:23.289 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+19:22:23.290 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+19:22:23.291 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+19:22:23.303 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+19:22:23.304 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+19:22:23.306 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+19:22:23.306 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+19:22:23.306 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+19:22:26.676 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/3
+19:22:26.692 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:22:26.700 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:45.0(Timestamp), 0(Integer), 咖啡设备(String), 3(Long)
+19:22:26.702 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:22:57.919 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/4
+19:22:57.927 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:22:57.929 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:56.0(Timestamp), 0(Integer), 咖啡玻璃器皿1(String), 4(Long)
+19:22:57.934 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:23:11.832 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/4
+19:23:11.845 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:23:11.847 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:56.0(Timestamp), 0(Integer), 咖啡玻璃器皿(String), 4(Long)
+19:23:11.853 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:23:30.525 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 20772 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+19:23:30.527 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+19:23:31.629 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+19:23:32.063 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:23:32.071 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:23:32.072 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:23:32.072 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+19:23:32.177 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:23:32.177 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1601 ms
+19:23:32.241 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+19:23:32.848 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:23:33.082 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:23:33.085 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:23:33.097 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:23:33.099 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:23:33.109 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:23:33.111 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:23:33.121 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:23:33.122 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+19:23:33.131 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+19:23:33.135 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+19:23:33.952 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:23:33.986 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:23:33.989 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.938 seconds (JVM running for 5.097)
+19:23:33.990 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+19:23:33.991 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-22 19:23:32",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1089280002, ConnectTime:"2020-02-22 19:23:33", UseCount:0, LastActiveTime:"2020-02-22 19:23:33"},
+		{ID:600270822, ConnectTime:"2020-02-22 19:23:33", UseCount:0, LastActiveTime:"2020-02-22 19:23:33"},
+		{ID:267061647, ConnectTime:"2020-02-22 19:23:33", UseCount:0, LastActiveTime:"2020-02-22 19:23:33"},
+		{ID:434249609, ConnectTime:"2020-02-22 19:23:33", UseCount:0, LastActiveTime:"2020-02-22 19:23:33"},
+		{ID:837237183, ConnectTime:"2020-02-22 19:23:33", UseCount:0, LastActiveTime:"2020-02-22 19:23:33"}
+	]
+}
+19:23:33.997 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@31e739bf
+19:23:47.050 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:23:47.050 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:23:47.058 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+19:23:47.075 [http-nio-8080-exec-1] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/4
+19:23:52.101 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/login
+19:23:52.227 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+19:23:52.307 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+19:23:52.328 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:23:52.330 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:23:52.332 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:23:52.342 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+19:23:52.342 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+19:23:52.344 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+19:23:52.344 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+19:23:52.345 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+19:23:52.409 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/admin/info
+19:23:52.410 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - E6209CD5D475ABEC03432952D0ADF658
+19:23:52.741 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+19:23:52.745 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+19:23:52.940 [http-nio-8080-exec-5] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/lists
+19:23:53.009 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_category WHERE (is_del = ?) 
+19:23:53.011 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - ==> Parameters: 0(Integer)
+19:23:53.013 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==    Columns: count(0)
+19:23:53.013 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample_COUNT - <==        Row: 5
+19:23:53.013 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample_COUNT - <==      Total: 1
+19:23:53.015 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by -id asc LIMIT ? 
+19:23:53.021 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer), 20(Integer)
+19:23:53.022 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+19:23:53.022 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+19:23:53.023 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+19:23:53.024 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, null, 0, 咖啡设备
+19:23:53.024 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+19:23:53.025 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+19:23:53.025 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+19:23:53.034 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+19:23:53.034 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+19:23:53.035 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+19:23:53.036 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+19:23:53.036 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+19:23:58.050 [http-nio-8080-exec-7] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/3
+19:23:58.060 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:23:58.065 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:45.0(Timestamp), 0(Integer), 咖啡设备(String), 3(Long)
+19:23:58.067 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:24:14.034 [http-nio-8080-exec-6] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/3
+19:24:14.039 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:24:14.040 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:45.0(Timestamp), 0(Integer), 咖啡设备1(String), 3(Long)
+19:24:14.045 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:24:26.707 [http-nio-8080-exec-8] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/category/3
+19:24:26.713 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==>  Preparing: UPDATE t_category SET id = id,create_time = ?,is_del = ?,category_name = ? WHERE id = ? 
+19:24:26.714 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - ==> Parameters: 2020-02-22 18:17:45.0(Timestamp), 0(Integer), 咖啡设备(String), 3(Long)
+19:24:26.719 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.updateByPrimaryKeySelective - <==    Updates: 1
+19:24:51.304 [http-nio-8080-exec-10] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/commodity/lists
+19:24:51.316 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_id,commodity_unit,delivery_cycle,note FROM t_commodity WHERE ( is_del = ? ) order by id asc 
+19:24:51.317 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+19:24:51.318 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 0
+19:24:51.328 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+19:24:51.329 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+19:24:51.331 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+19:24:51.331 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 0
+19:24:51.331 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+19:26:14.442 [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+19:26:14.442 [http-nio-8080-exec-2] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+19:26:14.567 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+19:26:14.568 [http-nio-8080-exec-3] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error
+19:26:15.040 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /vue-element-admin/transaction/list
+19:26:15.042 [http-nio-8080-exec-4] ERROR c.x.h.s.b.c.i.BackInterceptor - 拦截路径/error

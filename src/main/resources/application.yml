@@ -8,10 +8,22 @@ spring:
     cache: false
   profiles:
     active:
-      test
+      dev
   #允许用户自定义的类覆盖系统提供的类
   main:
     allow-bean-definition-overriding: true
+  mvc:
+    static-path-pattern: /static/*
+  redis:
+    host: 192.168.50.183
+    port: 6379
+    password: "wonyen@1602"
+    jedis:
+      pool:
+        max-idle: 8
+        max-active: 8
+        min-idle: 0
+        max-wait: 20ms
 #日志
 logging:
   #这种方法是使用xml的配置文件的形式配置，该xml配置文件规定了日志的格式，级别等信息

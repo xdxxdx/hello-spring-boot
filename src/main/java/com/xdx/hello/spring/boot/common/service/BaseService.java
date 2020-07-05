@@ -1,5 +1,7 @@
 package com.xdx.hello.spring.boot.common.service;
 
+import com.xdx.hello.spring.boot.common.dto.QueryParam;
+
 import java.util.List;
 
 public interface BaseService<T> {
@@ -93,7 +95,7 @@ public interface BaseService<T> {
      *
      * @param entity
      */
-    void updateById(T entity);
+    int updateById(T entity);
 
 
     /**
@@ -103,4 +105,24 @@ public interface BaseService<T> {
      */
     int updateSelectiveById(T entity);
 
+    /**
+     * 根据queryParam来动态查询
+     * @param queryParam
+     * @return
+     */
+    List<T>selectListByQueryParam(QueryParam queryParam);
+
+    /**
+     * 根据queryParam查询总记录数
+     * @param queryParam
+     * @return
+     */
+    Long selectCountByQueryParam(QueryParam queryParam);
+
+    /**
+     * 隐式删除
+     * @param id
+     * @return
+     */
+    int hiddenById(long id);
 }

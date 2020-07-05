@@ -1,0 +1,739 @@
+23:01:16.959 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 5652 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:01:16.975 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:01:17.873 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:01:18.349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:01:18.365 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:01:18.365 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:01:18.365 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:01:18.478 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:01:18.478 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1410 ms
+23:01:18.572 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:01:19.296 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:01:19.593 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:01:19.593 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:01:19.609 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:01:19.609 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:01:19.625 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:01:19.625 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:01:19.640 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:01:19.640 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:01:19.656 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:01:19.656 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:01:20.427 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:01:20.689 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:01:20.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:01:20.704 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.304 seconds (JVM running for 6.954)
+23:01:20.704 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:01:20.704 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-24 23:01:18",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:424188711, ConnectTime:"2020-02-24 23:01:19", UseCount:0, LastActiveTime:"2020-02-24 23:01:19"},
+		{ID:1651318806, ConnectTime:"2020-02-24 23:01:19", UseCount:0, LastActiveTime:"2020-02-24 23:01:19"},
+		{ID:760878472, ConnectTime:"2020-02-24 23:01:19", UseCount:0, LastActiveTime:"2020-02-24 23:01:19"},
+		{ID:1326541986, ConnectTime:"2020-02-24 23:01:19", UseCount:0, LastActiveTime:"2020-02-24 23:01:19"},
+		{ID:308103108, ConnectTime:"2020-02-24 23:01:19", UseCount:0, LastActiveTime:"2020-02-24 23:01:19"}
+	]
+}
+23:01:20.725 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@125d47c4
+23:02:59.445 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:02:59.445 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:02:59.445 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:02:59.601 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+23:02:59.679 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+23:02:59.726 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:02:59.726 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:02:59.726 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:02:59.742 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+23:02:59.742 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+23:02:59.742 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:02:59.742 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:02:59.742 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:02:59.820 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:03:00.210 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:03:00.319 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:03:00.787 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /vue-element-admin/transaction/list
+23:03:06.107 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:03:06.107 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:03:06.122 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:03:06.122 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:03:06.138 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:03:06.138 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:03:06.153 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:03:06.153 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:03:06.153 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:03:06.153 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:03:06.153 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:03:06.153 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:03:06.153 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:03:06.153 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:03:06.153 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:03:06.153 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:03:06.153 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:03:06.153 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:03:06.169 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:03:06.169 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:03:06.169 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:03:06.169 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:03:06.169 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:03:06.169 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:03:06.185 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:03:06.185 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:03:06.185 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:03:06.185 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:03:06.185 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:04:51.137 [http-nio-8080-exec-8] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:04:51.482 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:04:51.716 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:04:51.716 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:04:51.716 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:04:51.716 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:04:51.732 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:04:51.732 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:04:51.732 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:04:51.732 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:04:51.732 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:04:51.732 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:04:51.732 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:04:51.732 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:04:51.732 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:04:51.732 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:04:51.732 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:04:51.732 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:04:51.748 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:04:51.748 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:04:51.748 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:04:51.748 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:04:51.748 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:04:51.763 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:04:51.763 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:04:51.763 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:08:34.119 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:08:34.478 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:08:34.712 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:08:34.712 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:08:34.712 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:08:34.712 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:08:34.712 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:08:34.728 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:08:34.728 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:08:34.728 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:08:34.728 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:08:34.743 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:08:34.743 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:08:34.743 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:08:34.743 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:08:34.743 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:08:34.743 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:08:34.743 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:08:34.759 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:08:34.759 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:08:34.759 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:08:34.759 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:08:34.759 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:23:18.908 [http-nio-8080-exec-6] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:23:19.298 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:23:19.548 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:23:19.548 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:23:19.548 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:23:19.548 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:23:19.564 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:23:19.564 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:23:19.564 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:23:19.564 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:23:19.564 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:23:19.579 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:23:19.579 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:23:19.595 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:23:19.595 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:23:19.595 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:23:19.595 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:23:19.595 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:26:14.329 [http-nio-8080-exec-10] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:26:14.750 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:26:14.969 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:26:14.969 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:26:14.969 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:26:14.969 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:26:14.984 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:26:14.984 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:26:15.000 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:26:15.000 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:26:15.000 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:26:15.000 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:26:15.000 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:26:15.000 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:26:15.000 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:26:15.000 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:26:15.015 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:26:15.015 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:26:15.015 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:26:15.015 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:26:15.031 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:26:15.031 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:26:15.031 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:26:15.031 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:26:15.031 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:26:49.112 [http-nio-8080-exec-4] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:26:49.627 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:26:49.892 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:26:49.892 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:26:49.892 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:26:49.892 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:26:49.892 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:26:49.907 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:26:49.907 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:26:49.907 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:26:49.907 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:26:49.907 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:26:49.907 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:26:49.907 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:26:49.907 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:26:49.907 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:26:49.907 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:26:49.907 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:26:49.923 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:26:49.923 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:26:49.923 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:26:49.923 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:26:49.923 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:26:49.939 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:26:49.939 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:26:49.939 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:29:15.726 [http-nio-8080-exec-8] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:29:16.178 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:29:16.443 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:29:16.443 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:29:16.443 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:29:16.443 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:29:16.459 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:29:16.459 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:29:16.459 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:29:16.459 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:29:16.459 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:29:16.459 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:29:16.459 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:29:16.459 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:29:16.459 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:29:16.459 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:29:16.459 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:29:16.459 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:29:16.474 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:29:16.474 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:30:21.471 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:30:21.830 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:30:22.064 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:30:22.064 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:30:22.079 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:30:22.079 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:30:22.079 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:30:22.079 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:30:22.079 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:30:22.095 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:30:22.095 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:30:22.111 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:30:22.111 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:30:22.111 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:30:22.111 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:30:22.111 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:31:06.962 [http-nio-8080-exec-6] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:31:07.336 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:31:07.586 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:31:07.586 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:31:07.586 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:31:07.586 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:31:07.586 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:31:07.586 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:31:07.601 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:31:07.601 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:31:07.601 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:31:07.601 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:31:07.601 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:31:07.601 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:31:07.601 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:31:07.601 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:31:07.601 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:31:07.601 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:31:07.601 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:31:07.601 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:31:07.601 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:31:07.617 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:31:07.617 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:32:04.861 [http-nio-8080-exec-10] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:32:05.236 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:32:05.485 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:32:05.485 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:32:05.485 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:32:05.485 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:32:05.501 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:32:05.501 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:32:05.501 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:32:05.501 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:32:05.501 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:32:05.516 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:32:05.516 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:32:05.532 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:32:05.532 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:32:05.532 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:32:05.532 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:32:05.532 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:32:45.108 [http-nio-8080-exec-4] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:32:45.498 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:32:45.732 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:32:45.732 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:32:45.732 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:32:45.732 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:32:45.732 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:32:45.747 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:32:45.747 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:32:45.747 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:32:45.747 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:32:45.747 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:32:45.747 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:32:45.747 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:32:45.747 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:32:45.747 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:32:45.747 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:32:45.747 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:32:45.747 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:32:45.747 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:32:45.747 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:32:45.763 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:32:45.763 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:32:45.763 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:32:45.763 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:32:45.763 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:32:45.779 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:32:45.779 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:32:45.779 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:32:45.779 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:32:45.779 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:34:33.122 [http-nio-8080-exec-8] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:34:33.512 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:34:33.746 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:34:33.746 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:34:33.746 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:34:33.746 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:34:33.762 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:34:33.762 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:34:33.762 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:34:33.762 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:34:33.762 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:34:33.762 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:34:33.762 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:34:33.778 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:34:33.778 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:34:33.793 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:34:33.793 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:34:33.793 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:34:33.793 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:34:33.793 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:35:32.900 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:35:33.306 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:35:33.540 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:35:33.540 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:35:33.555 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:35:33.555 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:35:33.555 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:35:33.555 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:35:33.555 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:35:33.555 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:35:33.555 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:35:33.571 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:35:33.571 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:35:33.587 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:35:33.587 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:35:33.587 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:35:33.587 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:36:36.419 [http-nio-8080-exec-6] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:36:36.809 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:36:37.086 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:36:37.086 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:36:37.086 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:36:37.086 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:36:37.117 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:36:37.117 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:36:37.117 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:36:37.117 [http-nio-8080-exec-8] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:36:37.117 [http-nio-8080-exec-8] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:36:37.117 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:36:37.117 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:36:37.133 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:36:37.133 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:36:37.133 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:36:37.133 [http-nio-8080-exec-9] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:36:37.133 [http-nio-8080-exec-9] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:38:22.056 [http-nio-8080-exec-10] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:38:22.571 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:38:22.836 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:38:22.836 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:38:22.836 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:38:22.836 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:38:22.852 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:38:22.852 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:38:22.852 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:38:22.852 [http-nio-8080-exec-2] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:38:22.852 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:38:22.852 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:38:22.852 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:38:22.852 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:38:22.852 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:38:22.852 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:38:22.867 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:38:22.867 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:38:22.867 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:38:22.867 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:38:22.867 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:38:22.883 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:38:22.883 [http-nio-8080-exec-3] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:38:22.883 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:41:35.375 [http-nio-8080-exec-4] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:41:35.875 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:41:36.140 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:41:36.140 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:41:36.171 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:41:36.171 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:41:36.171 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:41:36.171 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:41:36.171 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:41:36.171 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:41:36.171 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:41:36.171 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:41:36.171 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:41:36.187 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:41:36.187 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:41:36.187 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:41:36.187 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:41:36.187 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:41:36.187 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:41:36.202 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:41:36.202 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:41:36.202 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:41:36.202 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:41:36.202 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:41:57.624 [http-nio-8080-exec-8] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:41:58.107 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:41:58.435 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:41:58.435 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:41:58.435 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:41:58.435 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:41:58.435 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:41:58.435 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:41:58.451 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:41:58.451 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:41:58.451 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:41:58.451 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:41:58.451 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:41:58.451 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:41:58.451 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:41:58.451 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:41:58.451 [http-nio-8080-exec-10] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:41:58.451 [http-nio-8080-exec-10] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:44:46.889 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - C208BA57B3DB218FA0DE717711D93B7D
+23:44:47.310 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:44:47.559 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:44:47.559 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:44:47.559 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:44:47.559 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:44:47.559 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:44:47.559 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:44:47.575 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:44:47.575 [http-nio-8080-exec-4] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:44:47.575 [http-nio-8080-exec-4] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:44:47.575 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:44:47.575 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:44:47.575 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:44:47.575 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 1
+23:44:47.575 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:44:47.575 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:44:47.575 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 1
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:44:47.591 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 1
+23:44:47.591 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:47:40.293 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - ==>  Preparing: INSERT INTO t_commodity ( id,category_id,commodity_name,commodity_unit,delivery_cycle ) VALUES( ?,?,?,?,? ) 
+23:47:40.293 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - ==> Parameters: null, 1(Long), 滴滴打车(String), 多对多(String), 12(Integer)
+23:47:40.308 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective - <==    Updates: 1
+23:47:40.308 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+23:47:40.308 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==    Columns: LAST_INSERT_ID()
+23:47:40.308 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.insertSelective!selectKey - <==        Row: 2
+23:47:40.308 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.insertSelective!selectKey - <==      Total: 1
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 2
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 1(Long)
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:47:40.464 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:47:40.464 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 2
+23:47:40.480 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:47:40.480 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:47:40.480 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:47:40.480 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 2
+23:47:40.480 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1

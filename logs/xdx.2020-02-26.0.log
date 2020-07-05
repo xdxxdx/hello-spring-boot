@@ -1,0 +1,1775 @@
+08:48:51.929 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 5984 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+08:48:51.945 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+08:48:52.930 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+08:48:53.367 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:48:53.382 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:48:53.382 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:48:53.382 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+08:48:53.507 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:48:53.507 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1359 ms
+08:48:53.585 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+08:48:54.287 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:48:54.599 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:48:54.599 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:48:54.615 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:48:54.615 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:48:54.630 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:48:54.630 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:48:54.630 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:48:54.630 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:48:54.646 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:48:54.646 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:48:55.395 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08:48:55.644 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:48:55.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:48:55.660 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 4.405 seconds (JVM running for 6.371)
+08:48:55.660 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+08:48:55.660 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 08:48:53",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:369838089, ConnectTime:"2020-02-26 08:48:54", UseCount:0, LastActiveTime:"2020-02-26 08:48:54"},
+		{ID:345722144, ConnectTime:"2020-02-26 08:48:54", UseCount:0, LastActiveTime:"2020-02-26 08:48:54"},
+		{ID:1716421772, ConnectTime:"2020-02-26 08:48:54", UseCount:0, LastActiveTime:"2020-02-26 08:48:54"},
+		{ID:1301542747, ConnectTime:"2020-02-26 08:48:54", UseCount:0, LastActiveTime:"2020-02-26 08:48:54"},
+		{ID:18130400, ConnectTime:"2020-02-26 08:48:54", UseCount:0, LastActiveTime:"2020-02-26 08:48:54"}
+	]
+}
+08:48:55.676 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@114a5e0
+08:49:46.809 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:49:46.809 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:49:46.824 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+08:49:46.980 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+08:49:47.058 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+08:49:47.105 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+08:49:47.105 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+08:49:47.105 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+08:49:47.105 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+08:49:47.105 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+08:49:47.121 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+08:49:47.121 [http-nio-8080-exec-1] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+08:49:47.121 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+08:49:47.199 [http-nio-8080-exec-2] INFO  c.x.h.s.b.controller.AdminController - 1A526F0DA0C57CC3D001B911798195BA
+08:49:47.557 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+08:49:47.713 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+08:49:48.103 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /vue-element-admin/transaction/list
+08:49:53.696 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+08:49:53.696 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+08:49:53.696 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+08:49:53.711 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+08:49:53.711 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+08:49:53.711 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+08:49:53.711 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+08:49:53.711 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+08:49:53.711 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+08:49:53.711 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+08:49:53.727 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:49:53.727 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:49:53.727 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:49:53.727 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:49:53.727 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id WHERE t1.is_del = 0 
+08:49:53.742 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+08:49:53.742 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+08:49:53.742 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 5
+08:49:53.742 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+08:49:53.742 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id where t1.is_del=0 order by t1.id asc LIMIT ? 
+08:49:53.742 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+08:49:53.742 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name
+08:49:53.742 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳
+08:49:53.758 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 5
+08:49:53.758 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+08:49:53.758 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:49:53.758 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:49:53.758 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:50:57.720 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 3232 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+08:50:57.720 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+08:50:58.809 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+08:50:59.433 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:50:59.449 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:50:59.449 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:50:59.449 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+08:50:59.589 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:50:59.589 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1807 ms
+08:50:59.714 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+08:51:00.541 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:51:00.775 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:51:00.775 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:51:00.790 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:51:00.790 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:51:00.790 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:51:00.806 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:51:00.806 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:51:00.806 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:51:00.821 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:51:00.821 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:51:01.867 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08:51:02.288 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:51:02.303 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:51:02.319 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.2 seconds (JVM running for 6.488)
+08:51:02.319 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+08:51:02.319 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 08:50:59",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:798319935, ConnectTime:"2020-02-26 08:51:00", UseCount:0, LastActiveTime:"2020-02-26 08:51:00"},
+		{ID:1079161247, ConnectTime:"2020-02-26 08:51:00", UseCount:0, LastActiveTime:"2020-02-26 08:51:00"},
+		{ID:1036420486, ConnectTime:"2020-02-26 08:51:00", UseCount:0, LastActiveTime:"2020-02-26 08:51:00"},
+		{ID:1625037390, ConnectTime:"2020-02-26 08:51:00", UseCount:0, LastActiveTime:"2020-02-26 08:51:00"},
+		{ID:1684285431, ConnectTime:"2020-02-26 08:51:00", UseCount:0, LastActiveTime:"2020-02-26 08:51:00"}
+	]
+}
+08:51:02.319 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@646427f7
+08:51:37.331 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:51:37.331 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:51:37.347 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+08:51:37.596 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+08:51:37.784 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+08:51:37.830 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+08:51:37.830 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+08:51:37.830 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+08:51:37.830 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+08:51:37.846 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11
+08:51:37.846 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111
+08:51:37.846 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 5
+08:51:37.877 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+08:51:37.893 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:51:37.893 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:51:37.893 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:51:37.893 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:51:48.750 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+08:51:48.750 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+08:51:48.750 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+08:51:48.750 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+08:51:48.750 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+08:51:48.766 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+08:51:48.766 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+08:51:48.766 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+08:51:48.766 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+08:51:48.766 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+08:51:48.813 [http-nio-8080-exec-4] INFO  c.x.h.s.b.controller.AdminController - 746D1283A6410A08268C27990BA0BE3D
+08:51:49.125 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+08:51:49.328 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+08:51:49.328 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+08:51:49.328 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+08:51:49.328 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+08:51:49.328 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+08:51:49.328 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+08:51:49.328 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+08:51:49.328 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+08:51:49.328 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+08:51:49.343 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null
+08:51:49.343 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无
+08:51:49.343 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11
+08:51:49.343 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111
+08:51:49.343 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 5
+08:51:49.359 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+08:51:49.359 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+08:51:49.359 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+08:51:49.359 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+08:51:49.359 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+08:51:49.359 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:51:49.359 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+08:51:49.359 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+08:51:49.359 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+08:51:49.374 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+08:51:49.374 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:51:49.374 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:51:49.374 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:51:49.374 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:52:17.781 [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+08:52:17.874 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 4448 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+08:52:17.874 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+08:52:18.826 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+08:52:19.216 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:52:19.232 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:52:19.232 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:52:19.232 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+08:52:19.325 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:52:19.325 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1404 ms
+08:52:19.403 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+08:52:19.996 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:52:20.214 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:52:20.230 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:52:20.230 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:52:20.230 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:52:20.246 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:52:20.246 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:52:20.261 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:52:20.261 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:52:20.277 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:52:20.277 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:52:20.932 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08:52:21.150 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:52:21.182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:52:21.182 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.829 seconds (JVM running for 5.248)
+08:52:21.182 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+08:52:21.182 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 08:52:19",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1821370276, ConnectTime:"2020-02-26 08:52:20", UseCount:0, LastActiveTime:"2020-02-26 08:52:20"},
+		{ID:33847681, ConnectTime:"2020-02-26 08:52:20", UseCount:0, LastActiveTime:"2020-02-26 08:52:20"},
+		{ID:718904563, ConnectTime:"2020-02-26 08:52:20", UseCount:0, LastActiveTime:"2020-02-26 08:52:20"},
+		{ID:1865539378, ConnectTime:"2020-02-26 08:52:20", UseCount:0, LastActiveTime:"2020-02-26 08:52:20"},
+		{ID:2089858999, ConnectTime:"2020-02-26 08:52:20", UseCount:0, LastActiveTime:"2020-02-26 08:52:20"}
+	]
+}
+08:52:21.197 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7c90b7b7
+08:54:07.797 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:54:07.797 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:54:07.812 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+08:54:07.921 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+08:54:07.999 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+08:54:08.015 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+08:54:08.015 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+08:54:08.015 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+08:54:08.031 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+08:54:08.031 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+08:54:08.031 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+08:54:08.031 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+08:54:08.031 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+08:54:08.031 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+08:54:08.046 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null
+08:54:08.046 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+08:54:08.046 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 1(Long)
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+08:54:08.046 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11
+08:54:08.046 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111
+08:54:08.046 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 5
+08:54:08.077 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+08:54:08.077 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+08:54:08.077 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+08:54:08.077 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+08:54:08.077 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+08:58:48.506 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 9000 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+08:58:48.521 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+08:58:49.613 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+08:58:50.222 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08:58:50.237 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08:58:50.237 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:58:50.237 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+08:58:50.362 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:58:50.362 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1778 ms
+08:58:50.503 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+08:58:51.408 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:58:51.642 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:58:51.657 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:58:51.657 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:58:51.673 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:58:51.673 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:58:51.673 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:58:51.688 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:58:51.688 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+08:58:51.704 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+08:58:51.704 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:58:52.702 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+08:58:53.144 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08:58:53.175 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08:58:53.175 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.239 seconds (JVM running for 6.489)
+08:58:53.175 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+08:58:53.175 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 08:58:50",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1625037390, ConnectTime:"2020-02-26 08:58:51", UseCount:0, LastActiveTime:"2020-02-26 08:58:51"},
+		{ID:1684285431, ConnectTime:"2020-02-26 08:58:51", UseCount:0, LastActiveTime:"2020-02-26 08:58:51"},
+		{ID:837790893, ConnectTime:"2020-02-26 08:58:51", UseCount:0, LastActiveTime:"2020-02-26 08:58:51"},
+		{ID:940369315, ConnectTime:"2020-02-26 08:58:51", UseCount:0, LastActiveTime:"2020-02-26 08:58:51"},
+		{ID:939693702, ConnectTime:"2020-02-26 08:58:51", UseCount:0, LastActiveTime:"2020-02-26 08:58:51"}
+	]
+}
+08:58:53.175 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@38029686
+08:59:42.221 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:59:42.221 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:59:42.237 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+08:59:42.471 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+08:59:42.674 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+08:59:42.721 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+08:59:42.721 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+08:59:42.721 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+08:59:42.721 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+08:59:42.736 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+08:59:42.736 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+08:59:42.736 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+08:59:42.736 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+08:59:42.736 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+08:59:42.736 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+08:59:42.736 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+08:59:42.736 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+08:59:42.767 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdx.hello.spring.boot.dao.TSpecMapper.selectListByCommodityId
+### The error may exist in com/xdx/hello/spring/boot/dao/TCategoryMapper.java (best guess)
+### The error may involve com.xdx.hello.spring.boot.dao.TCategoryMapper.selectByPrimaryKey
+### The error occurred while handling results
+### SQL: SELECT id,create_time,update_time,is_del,category_name  FROM t_category  WHERE  id = ?
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdx.hello.spring.boot.dao.TSpecMapper.selectListByCommodityId] with root cause
+java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdx.hello.spring.boot.dao.TSpecMapper.selectListByCommodityId
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:964)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:755)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:748)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNestedQueryMappingValue(DefaultResultSetHandler.java:743)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getPropertyMappingValue(DefaultResultSetHandler.java:465)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:441)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:404)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:354)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:328)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:301)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:194)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:136)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy93.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy82.selectListWithCategory(Unknown Source)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl.selectListByQueryParam(CommodityServiceImpl.java:27)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$FastClassBySpringCGLIB$$2f64e9d7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$EnhancerBySpringCGLIB$$8a4e487f.selectListByQueryParam(<generated>)
+	at com.xdx.hello.spring.boot.common.controller.BaseController.listByQueryParam(BaseController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+09:00:18.111 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 8216 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+09:00:18.111 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+09:00:18.938 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+09:00:19.344 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:00:19.344 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:00:19.344 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:00:19.344 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+09:00:19.453 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:00:19.453 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1201 ms
+09:00:19.515 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+09:00:20.139 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:00:20.373 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:00:20.373 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:00:20.389 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:00:20.389 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:00:20.404 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:00:20.404 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:00:20.420 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:00:20.420 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:00:20.420 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:00:20.420 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:00:21.106 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:00:21.340 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:00:21.356 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:00:21.372 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.927 seconds (JVM running for 5.128)
+09:00:21.372 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+09:00:21.372 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 09:00:19",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1326541986, ConnectTime:"2020-02-26 09:00:20", UseCount:0, LastActiveTime:"2020-02-26 09:00:20"},
+		{ID:308103108, ConnectTime:"2020-02-26 09:00:20", UseCount:0, LastActiveTime:"2020-02-26 09:00:20"},
+		{ID:423344137, ConnectTime:"2020-02-26 09:00:20", UseCount:0, LastActiveTime:"2020-02-26 09:00:20"},
+		{ID:1689262323, ConnectTime:"2020-02-26 09:00:20", UseCount:0, LastActiveTime:"2020-02-26 09:00:20"},
+		{ID:545266875, ConnectTime:"2020-02-26 09:00:20", UseCount:0, LastActiveTime:"2020-02-26 09:00:20"}
+	]
+}
+09:00:21.372 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@20801cbb
+09:01:39.852 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:01:39.852 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:01:39.867 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+09:01:39.992 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+09:01:40.055 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+09:01:40.086 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+09:01:40.086 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+09:01:40.086 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+09:01:40.086 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+09:01:40.086 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+09:01:40.086 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+09:01:40.086 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+09:01:40.101 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+09:01:40.101 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+09:01:40.101 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+09:01:40.101 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+09:01:40.101 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+09:01:40.101 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where is_del=0 and commodity_id=? 
+09:01:40.101 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 1(Long)
+09:01:40.117 [http-nio-8080-exec-1] ERROR druid.sql.Statement - {conn-10005, pstmt-20003} execute error. SELECT
+    *
+    FROM t_spec
+    where is_del=0
+    and commodity_id=?
+java.sql.SQLSyntaxErrorException: Unknown column 'is_del' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy95.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.loader.ResultLoader.selectList(ResultLoader.java:81)
+	at org.apache.ibatis.executor.loader.ResultLoader.loadResult(ResultLoader.java:70)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNestedQueryMappingValue(DefaultResultSetHandler.java:760)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getPropertyMappingValue(DefaultResultSetHandler.java:465)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:441)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:404)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:354)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:328)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:301)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:194)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:136)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy93.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy82.selectListWithCategory(Unknown Source)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl.selectListByQueryParam(CommodityServiceImpl.java:27)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$FastClassBySpringCGLIB$$2f64e9d7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$EnhancerBySpringCGLIB$$ba58d07e.selectListByQueryParam(<generated>)
+	at com.xdx.hello.spring.boot.common.controller.BaseController.listByQueryParam(BaseController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+09:01:40.179 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'is_del' in 'where clause'
+### The error may exist in file [D:\xdxgit\微服务学习\hello-spring-boot\target\classes\mapper\TSpecMapper.xml]
+### The error may involve com.xdx.hello.spring.boot.dao.TSpecMapper.selectListByCommodityId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     *     FROM t_spec     where is_del=0     and commodity_id=?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'is_del' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'is_del' in 'where clause'] with root cause
+java.sql.SQLSyntaxErrorException: Unknown column 'is_del' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy95.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.loader.ResultLoader.selectList(ResultLoader.java:81)
+	at org.apache.ibatis.executor.loader.ResultLoader.loadResult(ResultLoader.java:70)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getNestedQueryMappingValue(DefaultResultSetHandler.java:760)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getPropertyMappingValue(DefaultResultSetHandler.java:465)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:441)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:404)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:354)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:328)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:301)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:194)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:136)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy93.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy82.selectListWithCategory(Unknown Source)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl.selectListByQueryParam(CommodityServiceImpl.java:27)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$FastClassBySpringCGLIB$$2f64e9d7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$EnhancerBySpringCGLIB$$ba58d07e.selectListByQueryParam(<generated>)
+	at com.xdx.hello.spring.boot.common.controller.BaseController.listByQueryParam(BaseController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+09:02:24.950 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 9444 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+09:02:24.965 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+09:02:26.104 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+09:02:26.744 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:02:26.759 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:02:26.759 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:02:26.759 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+09:02:26.900 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:02:26.900 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1872 ms
+09:02:27.024 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+09:02:27.882 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:02:28.116 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:02:28.132 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:02:28.132 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:02:28.148 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:02:28.148 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:02:28.148 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:02:28.163 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:02:28.163 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+09:02:28.179 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+09:02:28.179 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:02:29.271 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:02:29.708 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:02:29.739 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:02:29.739 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.411 seconds (JVM running for 7.407)
+09:02:29.739 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+09:02:29.739 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 09:02:27",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1035825415, ConnectTime:"2020-02-26 09:02:28", UseCount:0, LastActiveTime:"2020-02-26 09:02:28"},
+		{ID:1248595768, ConnectTime:"2020-02-26 09:02:28", UseCount:0, LastActiveTime:"2020-02-26 09:02:28"},
+		{ID:1602880207, ConnectTime:"2020-02-26 09:02:28", UseCount:0, LastActiveTime:"2020-02-26 09:02:28"},
+		{ID:651535127, ConnectTime:"2020-02-26 09:02:28", UseCount:0, LastActiveTime:"2020-02-26 09:02:28"},
+		{ID:1891031939, ConnectTime:"2020-02-26 09:02:28", UseCount:0, LastActiveTime:"2020-02-26 09:02:28"}
+	]
+}
+09:02:29.754 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@70b6db83
+23:24:50.812 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:24:50.812 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:24:50.828 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+23:24:57.479 [Druid-ConnectionPool-Create-1211827856] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:24:57.494 [Druid-ConnectionPool-Create-1211827856] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:24:57.510 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+23:24:57.744 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+23:24:57.775 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:24:57.775 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:24:57.775 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:24:57.806 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+23:24:57.806 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+23:24:57.806 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:24:57.806 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:24:57.806 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:24:57.884 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - 30BAE7E3DEBF71DE936263350F7ED5A7
+23:24:58.212 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:24:58.493 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:24:58.493 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:24:58.508 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:24:58.508 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:24:58.524 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:24:58.524 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:24:58.524 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:24:58.524 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:24:58.524 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:24:58.586 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity WHERE is_del = 0 
+23:24:58.586 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - ==> Parameters: 
+23:24:58.586 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==    Columns: count(0)
+23:24:58.586 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==        Row: 5
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory_COUNT - <==      Total: 1
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==>  Preparing: SELECT id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note FROM t_commodity where is_del=0 order by id asc LIMIT ? 
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - ==> Parameters: 20(Integer)
+23:24:58.602 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note
+23:24:58.602 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 2(Long)
+23:24:58.602 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:24:58.602 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:24:58.602 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where commodity_id=? 
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 1(Long)
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - <====      Total: 0
+23:24:58.618 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE id = ? 
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - ====> Parameters: 1(Long)
+23:24:58.618 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====    Columns: id, create_time, update_time, is_del, category_name
+23:24:58.618 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByPrimaryKey - <====        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByPrimaryKey - <====      Total: 1
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where commodity_id=? 
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 2(Long)
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - <====      Total: 0
+23:24:58.618 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where commodity_id=? 
+23:24:58.618 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 3(Long)
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - <====      Total: 0
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where commodity_id=? 
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 4(Long)
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====    Columns: id, commodity_id, create_time, update_time, spec_name, price
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====        Row: 1, 4, 2020-02-25 23:30:32, 2020-02-25 23:30:32, 1111, 111111
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====        Row: 2, 4, 2020-02-25 23:30:32, 2020-02-25 23:30:32, 22222, 22222
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - <====      Total: 2
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListWithCategory - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====>  Preparing: SELECT * FROM t_spec where commodity_id=? 
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - ====> Parameters: 5(Long)
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====    Columns: id, commodity_id, create_time, update_time, spec_name, price
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====        Row: 3, 5, 2020-02-25 23:30:56, 2020-02-25 23:30:56, 1111, 11111111
+23:24:58.633 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByCommodityId - <====        Row: 4, 5, 2020-02-25 23:30:56, 2020-02-25 23:30:56, 222222, 222222222
+23:24:58.633 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByCommodityId - <====      Total: 2
+23:24:58.649 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListWithCategory - <==      Total: 5
+23:24:58.649 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:24:58.649 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:24:58.649 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:24:58.649 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:24:58.649 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:26:28.327 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 22568 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:26:28.327 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:26:29.231 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:26:29.668 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:26:29.668 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:26:29.668 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:26:29.668 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:26:29.777 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:26:29.777 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1201 ms
+23:26:29.855 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:26:30.448 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:26:30.667 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:26:30.667 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:26:30.682 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:26:30.682 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:26:30.698 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:26:30.698 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:26:30.713 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:26:30.713 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:26:30.729 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:26:30.729 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:26:31.369 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:26:31.587 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:26:31.618 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:26:31.618 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.848 seconds (JVM running for 4.982)
+23:26:31.618 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:26:31.618 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:26:29",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1503803534, ConnectTime:"2020-02-26 23:26:30", UseCount:0, LastActiveTime:"2020-02-26 23:26:30"},
+		{ID:409832049, ConnectTime:"2020-02-26 23:26:30", UseCount:0, LastActiveTime:"2020-02-26 23:26:30"},
+		{ID:1036257977, ConnectTime:"2020-02-26 23:26:30", UseCount:0, LastActiveTime:"2020-02-26 23:26:30"},
+		{ID:766957197, ConnectTime:"2020-02-26 23:26:30", UseCount:0, LastActiveTime:"2020-02-26 23:26:30"},
+		{ID:1696136701, ConnectTime:"2020-02-26 23:26:30", UseCount:0, LastActiveTime:"2020-02-26 23:26:30"}
+	]
+}
+23:26:31.618 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6518fdfd
+23:36:19.705 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 21488 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:36:19.705 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:36:21.110 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:36:21.781 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:36:21.796 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:36:21.796 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:36:21.796 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:36:21.968 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:36:21.968 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2185 ms
+23:36:22.108 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:36:23.060 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:36:23.310 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:36:23.325 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:36:23.325 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:36:23.341 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:36:23.341 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:36:23.341 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:36:23.356 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:36:23.356 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:36:23.372 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:36:23.372 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:36:24.386 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:36:24.870 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:36:24.901 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:36:24.901 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.858 seconds (JVM running for 7.346)
+23:36:24.901 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:36:24.901 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:36:22",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:424743902, ConnectTime:"2020-02-26 23:36:23", UseCount:0, LastActiveTime:"2020-02-26 23:36:23"},
+		{ID:1052546395, ConnectTime:"2020-02-26 23:36:23", UseCount:0, LastActiveTime:"2020-02-26 23:36:23"},
+		{ID:564424689, ConnectTime:"2020-02-26 23:36:23", UseCount:0, LastActiveTime:"2020-02-26 23:36:23"},
+		{ID:297137378, ConnectTime:"2020-02-26 23:36:23", UseCount:0, LastActiveTime:"2020-02-26 23:36:23"},
+		{ID:7064297, ConnectTime:"2020-02-26 23:36:23", UseCount:0, LastActiveTime:"2020-02-26 23:36:23"}
+	]
+}
+23:36:24.916 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6bcae9
+23:37:01.276 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:37:01.276 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:37:01.292 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+23:37:06.284 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+23:37:06.471 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+23:37:06.502 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:37:06.502 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:37:06.518 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:37:06.518 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+23:37:06.518 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+23:37:06.533 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:37:06.533 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:37:06.533 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:37:06.580 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - C0DB2F4960C91D12B83F2D1986E4B66C
+23:37:06.908 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:37:07.173 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:37:07.188 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:37:07.188 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:37:07.188 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:37:07.204 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:37:07.204 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:37:07.204 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:37:07.204 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:37:07.204 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:37:07.266 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:37:07.266 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:37:07.266 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:37:07.266 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:37:07.266 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:37:07.282 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.spec_id, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:37:07.282 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:37:07.298 [http-nio-8080-exec-6] ERROR druid.sql.Statement - {conn-10005, pstmt-20005} execute error. SELECT
+        t1.id,
+        t1.category_id,
+        t1.create_time,
+        t1.commodity_name,
+        t1.commodity_unit,
+        t1.delivery_cycle,
+        t1.note,
+        t2.category_name,
+        t3.spec_id,
+        t3.spec_name,
+        t3.price
+        FROM t_commodity t1 inner join t_category t2
+        on t1.category_id = t2.id
+        left join t_spec t3
+        on t1.id = t3.commodity_id
+        where t1.is_del=0
+         
+        order by t1.id asc LIMIT ? 
+java.sql.SQLSyntaxErrorException: Unknown column 't3.spec_id' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy95.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:136)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy93.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy82.selectListByJoin(Unknown Source)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl.selectListByQueryParam(CommodityServiceImpl.java:28)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$FastClassBySpringCGLIB$$2f64e9d7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$EnhancerBySpringCGLIB$$885d9604.selectListByQueryParam(<generated>)
+	at com.xdx.hello.spring.boot.common.controller.BaseController.listByQueryParam(BaseController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+23:37:07.391 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 't3.spec_id' in 'field list'
+### The error may exist in file [D:\xdxgit\微服务学习\hello-spring-boot\target\classes\mapper\TCommodityMapper.xml]
+### The error may involve com.xdx.hello.spring.boot.dao.TCommodityMapper.selectListByJoin-Inline
+### The error occurred while setting parameters
+### SQL: SELECT         t1.id,         t1.category_id,         t1.create_time,         t1.commodity_name,         t1.commodity_unit,         t1.delivery_cycle,         t1.note,         t2.category_name,         t3.spec_id,         t3.spec_name,         t3.price         FROM t_commodity t1 inner join t_category t2         on t1.category_id = t2.id         left join t_spec t3         on t1.id = t3.commodity_id         where t1.is_del=0                   order by t1.id asc LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 't3.spec_id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 't3.spec_id' in 'field list'] with root cause
+java.sql.SQLSyntaxErrorException: Unknown column 't3.spec_id' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterAdapter.preparedStatement_execute(FilterAdapter.java:1081)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy95.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:136)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy93.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy70.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy82.selectListByJoin(Unknown Source)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl.selectListByQueryParam(CommodityServiceImpl.java:28)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$FastClassBySpringCGLIB$$2f64e9d7.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.xdx.hello.spring.boot.service.impl.CommodityServiceImpl$$EnhancerBySpringCGLIB$$885d9604.selectListByQueryParam(<generated>)
+	at com.xdx.hello.spring.boot.common.controller.BaseController.listByQueryParam(BaseController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+23:37:39.643 [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+23:37:39.752 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 23168 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:37:39.752 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:37:40.486 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:37:40.876 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:37:40.876 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:37:40.876 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:37:40.876 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:37:40.985 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:37:40.985 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1155 ms
+23:37:41.063 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:37:41.687 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:37:41.921 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:37:41.921 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:37:41.936 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:37:41.936 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:37:41.952 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:37:41.952 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:37:41.968 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:37:41.968 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:37:41.968 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:37:41.968 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:37:42.654 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:37:42.919 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:37:42.950 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:37:42.950 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.668 seconds (JVM running for 6.334)
+23:37:42.950 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:37:42.950 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:37:41",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:2121745388, ConnectTime:"2020-02-26 23:37:41", UseCount:0, LastActiveTime:"2020-02-26 23:37:41"},
+		{ID:2002785788, ConnectTime:"2020-02-26 23:37:41", UseCount:0, LastActiveTime:"2020-02-26 23:37:41"},
+		{ID:2135089262, ConnectTime:"2020-02-26 23:37:41", UseCount:0, LastActiveTime:"2020-02-26 23:37:41"},
+		{ID:1792113076, ConnectTime:"2020-02-26 23:37:41", UseCount:0, LastActiveTime:"2020-02-26 23:37:41"},
+		{ID:788344609, ConnectTime:"2020-02-26 23:37:41", UseCount:0, LastActiveTime:"2020-02-26 23:37:41"}
+	]
+}
+23:37:42.966 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2efd2f21
+23:38:23.899 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:38:23.899 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:38:23.899 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:38:29.249 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+23:38:29.327 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+23:38:29.343 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:38:29.343 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:38:29.343 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:38:29.359 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+23:38:29.359 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+23:38:29.359 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:38:29.359 [http-nio-8080-exec-2] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:38:29.359 [http-nio-8080-exec-2] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:38:29.405 [http-nio-8080-exec-3] INFO  c.x.h.s.b.controller.AdminController - CCD8EBE263114E0E1B66C3759F7BE704
+23:38:29.733 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:38:29.983 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:38:29.983 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:38:29.983 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:38:29.983 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:38:29.998 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:38:29.998 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:38:29.998 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:38:29.998 [http-nio-8080-exec-5] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:38:29.998 [http-nio-8080-exec-5] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:38:30.029 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:38:30.029 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:38:30.029 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:38:30.029 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:38:30.029 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:38:30.045 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:38:30.045 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, id, spec_name, price
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:38:30.045 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:38:30.045 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:38:30.061 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:38:30.061 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:38:30.061 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:38:30.061 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:38:30.061 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:40:30.591 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 23068 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:40:30.591 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:40:31.715 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:40:32.354 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:40:32.370 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:40:32.370 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:40:32.370 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:40:32.510 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:40:32.510 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1856 ms
+23:40:32.635 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:40:33.477 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:40:33.714 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:40:33.729 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:40:33.745 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:40:33.745 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:40:33.761 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:40:33.761 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:40:33.776 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:40:33.776 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:40:33.792 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:40:33.792 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:40:34.868 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:40:35.336 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:40:35.368 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:40:35.368 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.362 seconds (JVM running for 6.95)
+23:40:35.368 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:40:35.368 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:40:32",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1144838820, ConnectTime:"2020-02-26 23:40:33", UseCount:0, LastActiveTime:"2020-02-26 23:40:33"},
+		{ID:994173375, ConnectTime:"2020-02-26 23:40:33", UseCount:0, LastActiveTime:"2020-02-26 23:40:33"},
+		{ID:1637651402, ConnectTime:"2020-02-26 23:40:33", UseCount:0, LastActiveTime:"2020-02-26 23:40:33"},
+		{ID:1215208733, ConnectTime:"2020-02-26 23:40:33", UseCount:0, LastActiveTime:"2020-02-26 23:40:33"},
+		{ID:1789237070, ConnectTime:"2020-02-26 23:40:33", UseCount:0, LastActiveTime:"2020-02-26 23:40:33"}
+	]
+}
+23:40:35.383 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6aa5974e
+23:41:13.573 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:41:13.573 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:41:13.573 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:41:13.823 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:41:14.041 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:41:14.073 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:41:14.073 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:41:14.073 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:41:14.088 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:41:14.088 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, id, spec_name, price
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:41:14.104 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:41:14.104 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:41:14.151 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:41:14.151 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:41:14.151 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:41:14.151 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:41:14.151 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:43:07.308 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 23640 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:43:07.308 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:43:08.201 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:43:08.622 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:43:08.622 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:43:08.622 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:43:08.622 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:43:08.732 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:43:08.732 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1378 ms
+23:43:08.810 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:43:09.418 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:43:09.652 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:43:09.652 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:43:09.668 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:43:09.668 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:43:09.668 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:43:09.668 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:43:09.683 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:43:09.683 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:43:09.699 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:43:09.699 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:43:10.338 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:43:10.572 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:43:10.588 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:43:10.588 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.754 seconds (JVM running for 4.832)
+23:43:10.588 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:43:10.604 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:43:08",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1014435252, ConnectTime:"2020-02-26 23:43:09", UseCount:0, LastActiveTime:"2020-02-26 23:43:09"},
+		{ID:1040477753, ConnectTime:"2020-02-26 23:43:09", UseCount:0, LastActiveTime:"2020-02-26 23:43:09"},
+		{ID:1640868131, ConnectTime:"2020-02-26 23:43:09", UseCount:0, LastActiveTime:"2020-02-26 23:43:09"},
+		{ID:1190941229, ConnectTime:"2020-02-26 23:43:09", UseCount:0, LastActiveTime:"2020-02-26 23:43:09"},
+		{ID:1113783787, ConnectTime:"2020-02-26 23:43:09", UseCount:0, LastActiveTime:"2020-02-26 23:43:09"}
+	]
+}
+23:43:10.604 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4262fdeb
+23:43:14.682 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:43:14.682 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:43:14.682 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:43:14.807 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:43:14.901 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:43:14.916 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:43:14.916 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:43:14.916 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:43:14.916 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:43:14.932 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:43:14.932 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:43:14.932 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:43:14.963 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:43:14.963 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:43:14.963 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:43:14.963 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:43:14.963 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:43:35.775 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? 
+23:43:35.791 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String)
+23:43:35.791 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:43:35.791 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:43:35.791 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:43:35.791 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==>  Preparing: SELECT id,create_time,update_time,user_name,role,pwd FROM t_admin WHERE user_name = ? AND pwd = ? 
+23:43:35.791 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - ==> Parameters: xdx2(String), 123456(String)
+23:43:35.791 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==    Columns: id, create_time, update_time, user_name, role, pwd
+23:43:35.791 [http-nio-8080-exec-3] TRACE c.x.h.s.b.dao.TAdminMapper.selectOne - <==        Row: 20, 2020-01-17 21:43:00, 2020-02-15 23:54:35, xdx2, admin, 123456
+23:43:35.791 [http-nio-8080-exec-3] DEBUG c.x.h.s.b.dao.TAdminMapper.selectOne - <==      Total: 1
+23:43:35.869 [http-nio-8080-exec-4] INFO  c.x.h.s.b.controller.AdminController - 6536F496D33345ABA4138317AE8F6059
+23:43:36.181 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /undefined
+23:43:36.399 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==>  Preparing: SELECT id,create_time,update_time,is_del,category_name FROM t_category WHERE ( is_del = ? ) order by id asc 
+23:43:36.415 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - ==> Parameters: 0(Integer)
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==    Columns: id, create_time, update_time, is_del, category_name
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 1, 2020-02-22 18:16:59, 2020-02-22 18:17:10, 0, 咖啡豆
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 2, 2020-02-22 18:17:35, null, 0, 挂耳
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 3, 2020-02-22 18:17:45, 2020-02-22 19:24:26, 0, 咖啡设备
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 4, 2020-02-22 18:17:56, 2020-02-22 19:23:11, 0, 咖啡玻璃器皿
+23:43:36.415 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectByExample - <==        Row: 5, 2020-02-22 18:18:07, null, 0, 活动茶歇
+23:43:36.415 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectByExample - <==      Total: 5
+23:43:36.430 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_category WHERE ( is_del = ? ) 
+23:43:36.430 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:43:36.430 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:43:36.430 [http-nio-8080-exec-6] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:43:36.430 [http-nio-8080-exec-6] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:43:36.446 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:43:36.446 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:43:36.446 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:43:36.446 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:43:36.446 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:43:36.446 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:43:36.446 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:43:36.446 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:43:36.446 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:43:36.446 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:43:36.461 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:43:36.461 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:43:36.461 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:43:36.461 [http-nio-8080-exec-7] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:43:36.461 [http-nio-8080-exec-7] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:48:14.916 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 24144 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:48:14.916 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:48:16.024 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:48:16.648 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:48:16.663 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:48:16.663 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:48:16.663 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:48:16.804 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:48:16.804 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1825 ms
+23:48:16.929 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:48:17.740 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:48:17.974 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:48:17.974 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:48:17.989 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:48:17.989 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:48:18.005 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:48:18.005 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:48:18.021 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:48:18.021 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:48:18.036 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:48:18.036 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:48:19.050 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:48:19.487 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:48:19.518 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:48:19.518 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.187 seconds (JVM running for 6.839)
+23:48:19.518 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:48:19.518 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:48:16",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1541019006, ConnectTime:"2020-02-26 23:48:17", UseCount:0, LastActiveTime:"2020-02-26 23:48:17"},
+		{ID:1742798189, ConnectTime:"2020-02-26 23:48:17", UseCount:0, LastActiveTime:"2020-02-26 23:48:17"},
+		{ID:557386040, ConnectTime:"2020-02-26 23:48:18", UseCount:0, LastActiveTime:"2020-02-26 23:48:18"},
+		{ID:287933084, ConnectTime:"2020-02-26 23:48:18", UseCount:0, LastActiveTime:"2020-02-26 23:48:18"},
+		{ID:441652258, ConnectTime:"2020-02-26 23:48:18", UseCount:0, LastActiveTime:"2020-02-26 23:48:18"}
+	]
+}
+23:48:19.534 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@1a531422
+23:48:25.978 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:48:25.978 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:48:25.993 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:48:26.243 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:48:26.446 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:48:26.492 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:48:26.492 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:48:26.492 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:48:26.492 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:48:26.508 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:48:26.508 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:48:26.508 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:48:26.508 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:48:26.508 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:48:26.508 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:48:26.524 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:48:26.524 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:48:26.524 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:48:26.524 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:48:26.555 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:48:26.555 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:48:26.555 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:48:26.555 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:48:26.555 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:49:16.015 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 24540 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:49:16.015 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:49:16.810 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:49:17.231 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:49:17.231 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:49:17.231 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:49:17.231 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:49:17.341 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:49:17.341 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1155 ms
+23:49:17.419 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:49:18.043 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:18.261 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:18.261 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:18.277 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:18.277 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:18.292 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:18.292 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:18.308 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:18.308 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:18.308 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:18.308 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:49:18.963 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:49:19.197 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:49:19.213 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:49:19.213 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.832 seconds (JVM running for 4.934)
+23:49:19.213 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:49:19.213 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:49:17",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:353841915, ConnectTime:"2020-02-26 23:49:18", UseCount:0, LastActiveTime:"2020-02-26 23:49:18"},
+		{ID:1922859107, ConnectTime:"2020-02-26 23:49:18", UseCount:0, LastActiveTime:"2020-02-26 23:49:18"},
+		{ID:1089280002, ConnectTime:"2020-02-26 23:49:18", UseCount:0, LastActiveTime:"2020-02-26 23:49:18"},
+		{ID:600270822, ConnectTime:"2020-02-26 23:49:18", UseCount:0, LastActiveTime:"2020-02-26 23:49:18"},
+		{ID:267061647, ConnectTime:"2020-02-26 23:49:18", UseCount:0, LastActiveTime:"2020-02-26 23:49:18"}
+	]
+}
+23:49:19.228 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@feb098f
+23:49:24.689 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:49:24.689 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:49:24.705 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+23:49:24.814 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id INNER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:49:24.908 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:49:24.923 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:49:24.923 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 4
+23:49:24.923 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:49:24.923 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id inner join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:49:24.939 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:49:24.939 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:49:24.939 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:49:24.939 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:49:24.939 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:49:24.939 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:49:24.939 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 4
+23:49:24.970 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:49:24.970 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:49:24.970 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:49:24.970 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:49:24.970 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:49:50.846 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 22044 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:49:50.846 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:49:51.923 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:49:52.562 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:49:52.578 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:49:52.578 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:49:52.578 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:49:52.718 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:49:52.718 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1809 ms
+23:49:52.859 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:49:53.721 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:53.955 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:53.955 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:53.971 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:53.971 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:53.986 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:53.986 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:53.986 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:53.986 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:49:54.002 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:49:54.002 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:49:55.047 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:49:55.468 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:49:55.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:49:55.500 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 5.263 seconds (JVM running for 6.523)
+23:49:55.500 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:49:55.500 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:49:52",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1955991197, ConnectTime:"2020-02-26 23:49:53", UseCount:0, LastActiveTime:"2020-02-26 23:49:53"},
+		{ID:1073862849, ConnectTime:"2020-02-26 23:49:53", UseCount:0, LastActiveTime:"2020-02-26 23:49:53"},
+		{ID:263565037, ConnectTime:"2020-02-26 23:49:53", UseCount:0, LastActiveTime:"2020-02-26 23:49:53"},
+		{ID:1938374337, ConnectTime:"2020-02-26 23:49:53", UseCount:0, LastActiveTime:"2020-02-26 23:49:53"},
+		{ID:934225099, ConnectTime:"2020-02-26 23:49:54", UseCount:0, LastActiveTime:"2020-02-26 23:49:54"}
+	]
+}
+23:49:55.500 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@37af24cb
+23:50:03.721 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:50:03.721 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:50:03.721 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:50:03.986 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:50:04.204 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:50:04.236 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:50:04.236 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:50:04.236 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:50:04.251 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:50:04.251 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:50:04.251 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:50:04.267 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:50:04.267 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:50:04.298 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:50:04.298 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:50:04.314 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:50:04.314 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:50:04.314 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1
+23:51:00.458 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 23140 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:51:00.458 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:51:01.331 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:51:01.752 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:51:01.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:51:01.752 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:51:01.752 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:51:01.862 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:51:01.862 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1233 ms
+23:51:01.924 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:51:02.532 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:51:02.766 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:51:02.766 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:51:02.782 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:51:02.782 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:51:02.798 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:51:02.798 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:51:02.813 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:51:02.813 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:51:02.813 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:51:02.829 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:51:03.453 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:51:03.687 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:51:03.718 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:51:03.718 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 3.837 seconds (JVM running for 4.986)
+23:51:03.718 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:51:03.718 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-26 23:51:01",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:733224796, ConnectTime:"2020-02-26 23:51:02", UseCount:0, LastActiveTime:"2020-02-26 23:51:02"},
+		{ID:616990183, ConnectTime:"2020-02-26 23:51:02", UseCount:0, LastActiveTime:"2020-02-26 23:51:02"},
+		{ID:2108044736, ConnectTime:"2020-02-26 23:51:02", UseCount:0, LastActiveTime:"2020-02-26 23:51:02"},
+		{ID:786036472, ConnectTime:"2020-02-26 23:51:02", UseCount:0, LastActiveTime:"2020-02-26 23:51:02"},
+		{ID:622609024, ConnectTime:"2020-02-26 23:51:02", UseCount:0, LastActiveTime:"2020-02-26 23:51:02"}
+	]
+}
+23:51:03.734 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@251c4280
+23:51:07.056 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:51:07.056 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:51:07.056 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:51:07.197 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==>  Preparing: SELECT count(0) FROM t_commodity t1 INNER JOIN t_category t2 ON t1.category_id = t2.id LEFT OUTER JOIN t_spec t3 ON t1.id = t3.commodity_id WHERE t1.is_del = 0 
+23:51:07.275 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - ==> Parameters: 
+23:51:07.306 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==    Columns: count(0)
+23:51:07.306 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin_COUNT - <==        Row: 7
+23:51:07.306 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin_COUNT - <==      Total: 1
+23:51:07.306 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc LIMIT ? 
+23:51:07.306 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 20(Integer)
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:51:07.322 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:51:07.322 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:51:07.353 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:51:07.353 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:51:07.353 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:51:07.353 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:51:07.353 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1

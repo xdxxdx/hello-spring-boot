@@ -68,8 +68,8 @@ public abstract class BaseServiceImpl<M extends Mapper<T>, T> implements BaseSer
     }
 
     @Override
-    public void updateById(T entity) {
-        mapper.updateByPrimaryKey(entity);
+    public int updateById(T entity) {
+        return mapper.updateByPrimaryKey(entity);
     }
 
     @Override

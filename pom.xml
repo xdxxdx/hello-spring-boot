@@ -22,6 +22,9 @@
         <mybatis.version>2.1.0</mybatis.version>
         <tk.mybatis.version>4.0.0</tk.mybatis.version>
         <pagehelper.version>1.2.3</pagehelper.version>
+        <common-lang3.version>3.8.1</common-lang3.version>
+        <fast-json.version>1.2.47</fast-json.version>
+        <jackjson.version>2.11.1</jackjson.version>
     </properties>
 
     <dependencies>
@@ -89,6 +92,44 @@
             <version>${pagehelper.version}</version>
         </dependency>
         <!--mybatis end-->
+        <!-- commons-lang3 begin-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${common-lang3.version}</version>
+        </dependency>
+        <!-- commons-lang3 end-->
+        <!--fastjson begin -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fast-json.version}</version>
+        </dependency>
+        <!--fastjson end -->
+        <!--jackjson begin-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackjson.version}</version>
+        </dependency>
+        <!--jackjson end-->
+
+        <!--jedis begin-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+        </dependency>
+        <!--jedis end-->
     </dependencies>
 <!--    <profiles>-->
 <!--        <profile>-->

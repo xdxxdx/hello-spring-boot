@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xdx.hello.spring.boot.dao.TCommodityMapper">
+  <resultMap id="BaseResultMap" type="com.xdx.hello.spring.boot.entity.TCommodity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="category_id" jdbcType="BIGINT" property="categoryId" />
+    <result column="commodity_name" jdbcType="VARCHAR" property="commodityName" />
+    <result column="commodity_unit" jdbcType="VARCHAR" property="commodityUnit" />
+    <result column="delivery_cycle" jdbcType="INTEGER" property="deliveryCycle" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+      <association column="category_id" javaType="com.xdx.hello.spring.boot.entity.TCategory" property="category" select="com.xdx.hello.spring.boot.dao.TCategoryMapper.selectByPrimaryKey">
+      </association>
+  </resultMap>
+  <!--方法一：使用n+1嵌套查询-->
+  <resultMap id="CommodityWithCategory" type="com.xdx.hello.spring.boot.entity.TCommodity">
+      <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="category_id" jdbcType="BIGINT" property="categoryId" />
+      <result column="commodity_name" jdbcType="VARCHAR" property="commodityName" />
+    <result column="commodity_unit" jdbcType="VARCHAR" property="commodityUnit" />
+    <result column="delivery_cycle" jdbcType="INTEGER" property="deliveryCycle" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+      <association column="category_id" javaType="com.xdx.hello.spring.boot.entity.TCategory" property="category" select="com.xdx.hello.spring.boot.dao.TCategoryMapper.selectByPrimaryKey">
+      </association>
+      <collection property="specs" column="id" ofType="com.xdx.hello.spring.boot.entity.TSpec"
+                  select="com.xdx.hello.spring.boot.dao.TSpecMapper.selectListByCommodityId">
+      </collection>
+  </resultMap>
+
+    <select id="selectListWithCategory" parameterType="com.xdx.hello.spring.boot.common.dto.QueryParam" resultMap="CommodityWithCategory">
+		SELECT
+		id,
+		category_id,
+		create_time,
+		commodity_name,
+        commodity_unit,
+        delivery_cycle,
+        note
+		FROM t_commodity
+		where is_del=0
+        <if test="commodityName != null and commodityName !=''">
+            and commodity_name LIKE CONCAT('%', #{commodityName},'%')
+        </if>
+        order by ${sort} ${sortOrder}
+	</select>
+
+
+</mapper>

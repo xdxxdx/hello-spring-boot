@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xdx.hello.spring.boot.dao.TBalanceLogMapper">
+  <resultMap id="BaseResultMap" type="com.xdx.hello.spring.boot.entity.TBalanceLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+    <result column="reward_balance" jdbcType="DECIMAL" property="rewardBalance" />
+    <result column="score" jdbcType="INTEGER" property="score" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+  </resultMap>
+</mapper>

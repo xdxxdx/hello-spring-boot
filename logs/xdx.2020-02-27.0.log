@@ -1,0 +1,62 @@
+23:57:36.699 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 7976 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+23:57:36.699 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+23:57:38.119 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+23:57:38.930 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23:57:38.946 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:57:38.946 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:57:38.946 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:57:39.180 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:57:39.180 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2372 ms
+23:57:39.304 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+23:57:41.005 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:57:41.660 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:57:41.660 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:57:41.707 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:57:41.707 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:57:41.738 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:57:41.738 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:57:41.754 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:57:41.754 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+23:57:41.863 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+23:57:41.878 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:57:43.314 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:57:43.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:57:43.641 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23:57:43.641 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 7.941 seconds (JVM running for 11.245)
+23:57:43.641 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+23:57:43.641 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-27 23:57:39",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:472124658, ConnectTime:"2020-02-27 23:57:41", UseCount:0, LastActiveTime:"2020-02-27 23:57:41"},
+		{ID:2025322501, ConnectTime:"2020-02-27 23:57:41", UseCount:0, LastActiveTime:"2020-02-27 23:57:41"},
+		{ID:1492272748, ConnectTime:"2020-02-27 23:57:41", UseCount:0, LastActiveTime:"2020-02-27 23:57:41"},
+		{ID:1477048870, ConnectTime:"2020-02-27 23:57:41", UseCount:0, LastActiveTime:"2020-02-27 23:57:41"},
+		{ID:1685470793, ConnectTime:"2020-02-27 23:57:41", UseCount:0, LastActiveTime:"2020-02-27 23:57:41"}
+	]
+}
+23:57:43.657 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@64763e49
+23:58:12.506 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:58:12.506 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:58:12.506 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+23:58:12.600 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==>  Preparing: SELECT t1.id, t1.category_id, t1.create_time, t1.commodity_name, t1.commodity_unit, t1.delivery_cycle, t1.note, t2.category_name, t3.id as specId, t3.spec_name, t3.price FROM t_commodity t1 inner join t_category t2 on t1.category_id = t2.id left outer join t_spec t3 on t1.id = t3.commodity_id where t1.is_del=0 order by t1.id asc 
+23:58:12.678 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - ==> Parameters: 
+23:58:12.725 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==    Columns: id, category_id, create_time, commodity_name, commodity_unit, delivery_cycle, note, category_name, specId, spec_name, price
+23:58:12.725 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 1, 2, 2020-02-23 11:39:10, D耶加, 盒, 3, 无, 挂耳, null, null, null
+23:58:12.725 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 2, 1, 2020-02-24 23:47:40, 滴滴打车, 多对多, 12, null, 咖啡豆, null, null, null
+23:58:12.725 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 3, 1, 2020-02-25 23:11:41, 爪哇咖啡, 包, 12, 无, 咖啡豆, null, null, null
+23:58:12.740 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 2, 22222, 22222
+23:58:12.740 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 4, 1, 2020-02-25 23:30:32, 多对多, 多对多, 11, 11, 咖啡豆, 1, 1111, 111111
+23:58:12.740 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 3, 1111, 11111111
+23:58:12.740 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectListByJoin - <==        Row: 5, 2, 2020-02-25 23:30:56, 哒哒哒哒哒哒, 1111111, 1111111, 1111111, 挂耳, 4, 222222, 222222222
+23:58:12.740 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectListByJoin - <==      Total: 7
+23:58:12.756 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==>  Preparing: SELECT COUNT(id) FROM t_commodity WHERE ( is_del = ? ) 
+23:58:12.771 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - ==> Parameters: 0(Integer)
+23:58:12.771 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==    Columns: COUNT(id)
+23:58:12.771 [http-nio-8080-exec-1] TRACE c.x.h.s.b.d.T.selectCountByExample - <==        Row: 5
+23:58:12.771 [http-nio-8080-exec-1] DEBUG c.x.h.s.b.d.T.selectCountByExample - <==      Total: 1

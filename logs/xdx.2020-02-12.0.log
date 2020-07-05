@@ -1,0 +1,236 @@
+14:13:44.785 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest], using SpringBootContextLoader
+14:13:44.796 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:13:45.352 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:13:45.377 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fb700ee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f67eb2a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a668b6e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f683daf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78ffe6dc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@8317c52, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@76f2bbc1, org.springframework.test.context.event.EventPublishingTestExecutionListener@68e965f5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f27a732, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c779568, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f381794, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cdd0d4b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7e9131d5]
+14:13:46.081 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Starting AdminServiceImplTest on PC-2019HWL with PID 20412 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+14:13:46.083 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - The following profiles are active: test
+14:13:47.303 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+14:13:48.455 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+14:13:48.474 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+14:13:48.474 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:13:48.475 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:13:48.726 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:13:48.726 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2530 ms
+14:13:48.953 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+14:13:49.811 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:13:50.098 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:13:50.103 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:13:50.119 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:13:50.121 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:13:50.136 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:13:50.137 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:13:50.154 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:13:50.156 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:13:50.171 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:13:50.176 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:13:51.059 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:13:51.641 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+14:13:51.722 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 63298 (http) with context path ''
+14:13:51.726 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Started AdminServiceImplTest in 6.186 seconds (JVM running for 8.227)
+14:13:51.727 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+14:13:51.728 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-12 14:13:48",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:627815870, ConnectTime:"2020-02-12 14:13:50", UseCount:0, LastActiveTime:"2020-02-12 14:13:50"},
+		{ID:1609501721, ConnectTime:"2020-02-12 14:13:50", UseCount:0, LastActiveTime:"2020-02-12 14:13:50"},
+		{ID:778925754, ConnectTime:"2020-02-12 14:13:50", UseCount:0, LastActiveTime:"2020-02-12 14:13:50"},
+		{ID:581359452, ConnectTime:"2020-02-12 14:13:50", UseCount:0, LastActiveTime:"2020-02-12 14:13:50"},
+		{ID:1519927539, ConnectTime:"2020-02-12 14:13:50", UseCount:0, LastActiveTime:"2020-02-12 14:13:50"}
+	]
+}
+14:13:51.742 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5a9840f3
+14:13:51.780 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2dd178f3 testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@64656b9e, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6870cfac testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@71c8becc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13c10b87, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3c72f59f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@45554613]; rollback [true]
+14:13:52.137 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==>  Preparing: INSERT INTO t_admin ( id,update_time,user_name,role,pwd ) VALUES( ?,?,?,?,? ) 
+14:13:52.315 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==> Parameters: null, null, 海沧(String), null, 1122222(String)
+14:13:52.322 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - <==    Updates: 1
+14:13:52.329 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+14:13:52.384 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==    Columns: LAST_INSERT_ID()
+14:13:52.384 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==        Row: 48
+14:13:52.386 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - <==      Total: 1
+14:13:52.408 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@2dd178f3 testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@64656b9e, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6870cfac testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@71c8becc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13c10b87, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3c72f59f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]
+14:13:52.418 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:13:52.420 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+14:13:52.433 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+14:14:31.727 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest], using SpringBootContextLoader
+14:14:31.736 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:14:31.984 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:14:32.004 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6497b078, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41c2284a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@53aad5d5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46fa7c39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fb700ee, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f67eb2a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a668b6e, org.springframework.test.context.event.EventPublishingTestExecutionListener@5f683daf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78ffe6dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8317c52, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76f2bbc1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68e965f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6f27a732]
+14:14:32.811 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Starting AdminServiceImplTest on PC-2019HWL with PID 20292 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+14:14:32.811 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - The following profiles are active: test
+14:14:34.102 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+14:14:35.154 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+14:14:35.167 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+14:14:35.167 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:14:35.168 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:14:35.395 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:14:35.395 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2425 ms
+14:14:35.593 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+14:14:36.383 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:14:36.629 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:14:36.633 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:14:36.646 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:14:36.648 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:14:36.664 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:14:36.666 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:14:36.679 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:14:36.680 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:14:36.692 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:14:36.696 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:14:37.444 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:14:37.929 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+14:14:37.957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 63366 (http) with context path ''
+14:14:37.962 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Started AdminServiceImplTest in 5.882 seconds (JVM running for 7.153)
+14:14:37.963 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+14:14:37.964 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-12 14:14:35",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:2120344156, ConnectTime:"2020-02-12 14:14:36", UseCount:0, LastActiveTime:"2020-02-12 14:14:36"},
+		{ID:1633530712, ConnectTime:"2020-02-12 14:14:36", UseCount:0, LastActiveTime:"2020-02-12 14:14:36"},
+		{ID:627815870, ConnectTime:"2020-02-12 14:14:36", UseCount:0, LastActiveTime:"2020-02-12 14:14:36"},
+		{ID:1609501721, ConnectTime:"2020-02-12 14:14:36", UseCount:0, LastActiveTime:"2020-02-12 14:14:36"},
+		{ID:778925754, ConnectTime:"2020-02-12 14:14:36", UseCount:0, LastActiveTime:"2020-02-12 14:14:36"}
+	]
+}
+14:14:37.976 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2e6d76ba
+14:14:38.013 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6629643d testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@2dd178f3, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64656b9e testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45dd4eda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e4c8041, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@402e37bc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78e94dcf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@6870cfac]; rollback [true]
+14:14:38.279 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==>  Preparing: INSERT INTO t_admin ( id,update_time,user_name,role,pwd ) VALUES( ?,?,?,?,? ) 
+14:14:38.465 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==> Parameters: null, null, 海沧(String), null, 1122222(String)
+14:14:38.470 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - <==    Updates: 1
+14:14:38.477 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+14:14:38.526 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==    Columns: LAST_INSERT_ID()
+14:14:38.527 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==        Row: 49
+14:14:38.529 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - <==      Total: 1
+14:14:38.548 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6629643d testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@2dd178f3, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64656b9e testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45dd4eda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e4c8041, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@402e37bc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78e94dcf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]
+14:14:38.555 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:14:38.558 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+14:14:38.569 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+14:16:11.890 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest], using SpringBootContextLoader
+14:16:11.900 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:16:12.166 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:16:12.189 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6497b078, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41c2284a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@53aad5d5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46fa7c39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fb700ee, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f67eb2a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a668b6e, org.springframework.test.context.event.EventPublishingTestExecutionListener@5f683daf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78ffe6dc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8317c52, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76f2bbc1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68e965f5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6f27a732]
+14:16:13.412 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Starting AdminServiceImplTest on PC-2019HWL with PID 17620 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+14:16:13.414 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - The following profiles are active: test
+14:16:14.599 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+14:16:15.900 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+14:16:15.915 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+14:16:15.915 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:16:15.916 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:16:16.144 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:16:16.144 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2686 ms
+14:16:16.363 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+14:16:17.137 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:16:17.377 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:16:17.381 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:16:17.394 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:16:17.396 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:16:17.413 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:16:17.415 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:16:17.429 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:16:17.430 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:16:17.441 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:16:17.445 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:16:18.160 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:16:18.678 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+14:16:18.814 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 63493 (http) with context path ''
+14:16:18.818 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Started AdminServiceImplTest in 6.567 seconds (JVM running for 7.855)
+14:16:18.819 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+14:16:18.820 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-12 14:16:16",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:1364898802, ConnectTime:"2020-02-12 14:16:17", UseCount:0, LastActiveTime:"2020-02-12 14:16:17"},
+		{ID:1829651877, ConnectTime:"2020-02-12 14:16:17", UseCount:0, LastActiveTime:"2020-02-12 14:16:17"},
+		{ID:2121744549, ConnectTime:"2020-02-12 14:16:17", UseCount:0, LastActiveTime:"2020-02-12 14:16:17"},
+		{ID:2057313241, ConnectTime:"2020-02-12 14:16:17", UseCount:0, LastActiveTime:"2020-02-12 14:16:17"},
+		{ID:2120344156, ConnectTime:"2020-02-12 14:16:17", UseCount:0, LastActiveTime:"2020-02-12 14:16:17"}
+	]
+}
+14:16:18.833 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7e61e25c
+14:16:18.871 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@53d6e959 testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@3caee3a8, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@69a40b3c testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45dd4eda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e4c8041, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@402e37bc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78e94dcf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@251c90f]; rollback [true]
+14:16:19.148 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==>  Preparing: INSERT INTO t_admin ( id,update_time,user_name,role,pwd ) VALUES( ?,?,?,?,? ) 
+14:16:19.353 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==> Parameters: null, null, 海沧(String), null, 1122222(String)
+14:16:19.361 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - <==    Updates: 1
+14:16:19.367 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+14:16:19.424 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==    Columns: LAST_INSERT_ID()
+14:16:19.424 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==        Row: 50
+14:16:19.428 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - <==      Total: 1
+14:16:19.451 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@53d6e959 testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@3caee3a8, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@69a40b3c testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45dd4eda, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e4c8041, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@402e37bc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@78e94dcf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]
+14:16:19.458 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:16:19.460 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+14:16:19.471 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+14:17:45.106 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest], using SpringBootContextLoader
+14:17:45.118 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:17:45.495 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:17:45.517 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fb700ee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f67eb2a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4a668b6e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5f683daf, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78ffe6dc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@8317c52, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@76f2bbc1, org.springframework.test.context.event.EventPublishingTestExecutionListener@68e965f5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f27a732, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c779568, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@f381794, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2cdd0d4b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7e9131d5]
+14:17:46.297 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Starting AdminServiceImplTest on PC-2019HWL with PID 19188 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+14:17:46.300 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - The following profiles are active: test
+14:17:47.405 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+14:17:48.558 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+14:17:48.571 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+14:17:48.571 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:17:48.572 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+14:17:48.789 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:17:48.789 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2379 ms
+14:17:49.006 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+14:17:49.871 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:17:50.134 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:17:50.138 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:17:50.150 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:17:50.152 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:17:50.167 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:17:50.169 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:17:50.182 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:17:50.184 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+14:17:50.195 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+14:17:50.199 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:17:51.122 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:17:51.748 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+14:17:51.780 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 63681 (http) with context path ''
+14:17:51.784 [main] INFO  c.x.h.s.b.s.i.AdminServiceImplTest - Started AdminServiceImplTest in 6.152 seconds (JVM running for 7.579)
+14:17:51.785 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+14:17:51.786 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-12 14:17:49",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:778925754, ConnectTime:"2020-02-12 14:17:50", UseCount:0, LastActiveTime:"2020-02-12 14:17:50"},
+		{ID:581359452, ConnectTime:"2020-02-12 14:17:50", UseCount:0, LastActiveTime:"2020-02-12 14:17:50"},
+		{ID:1519927539, ConnectTime:"2020-02-12 14:17:50", UseCount:0, LastActiveTime:"2020-02-12 14:17:50"},
+		{ID:2100297853, ConnectTime:"2020-02-12 14:17:50", UseCount:0, LastActiveTime:"2020-02-12 14:17:50"},
+		{ID:942502343, ConnectTime:"2020-02-12 14:17:50", UseCount:0, LastActiveTime:"2020-02-12 14:17:50"}
+	]
+}
+14:17:51.797 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@382d71c7
+14:17:51.837 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6870cfac testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@45554613, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@63e5b8aa testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@71c8becc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13c10b87, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3c72f59f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@2c9306d3]; rollback [false]
+14:17:52.107 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==>  Preparing: INSERT INTO t_admin ( id,update_time,user_name,role,pwd ) VALUES( ?,?,?,?,? ) 
+14:17:52.309 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - ==> Parameters: null, null, 海沧(String), null, 1122222(String)
+14:17:52.315 [main] DEBUG c.x.h.s.boot.dao.TAdminMapper.insert - <==    Updates: 1
+14:17:52.322 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - ==>  Executing: SELECT LAST_INSERT_ID() 
+14:17:52.370 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==    Columns: LAST_INSERT_ID()
+14:17:52.370 [main] TRACE c.x.h.s.b.d.T.insert!selectKey - <==        Row: 51
+14:17:52.372 [main] DEBUG c.x.h.s.b.d.T.insert!selectKey - <==      Total: 1
+14:17:52.391 [main] INFO  o.s.t.c.t.TransactionContext - Committed transaction for test: [DefaultTestContext@6870cfac testClass = AdminServiceImplTest, testInstance = com.xdx.hello.spring.boot.service.impl.AdminServiceImplTest@45554613, testMethod = testAddAdmin@AdminServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@63e5b8aa testClass = AdminServiceImplTest, locations = '{}', classes = '{class com.xdx.hello.spring.boot.HelloSpringBootApplication, class com.xdx.hello.spring.boot.HelloSpringBootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@71c8becc, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3bd40a57, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13c10b87, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3c72f59f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]]
+14:17:52.401 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:17:52.402 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+14:17:52.411 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

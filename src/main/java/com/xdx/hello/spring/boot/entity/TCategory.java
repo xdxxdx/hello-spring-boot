@@ -3,35 +3,43 @@ package com.xdx.hello.spring.boot.entity;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_admin")
-public class TAdmin {
+@Table(name = "t_category")
+public class TCategory {
+    /**
+     * 主键，类别Id
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "create_time",insertable = false)
+    @Column(name = "create_time")
     private Date createTime;
 
     @Column(name = "update_time")
     private Date updateTime;
 
-    @Column(name = "user_name")
-    private String userName;
-
-    @Column(name = "role")
-    private String role;
-
-    private String pwd;
+    @Column(name = "is_del")
+    private Integer isDel;
 
     /**
-     * @return id
+     * 类别名称
+     */
+    @Column(name = "category_name")
+    private String categoryName;
+
+    /**
+     * 获取主键，类别Id
+     *
+     * @return id - 主键，类别Id
      */
     public Long getId() {
         return id;
     }
 
     /**
-     * @param id
+     * 设置主键，类别Id
+     *
+     * @param id 主键，类别Id
      */
     public void setId(Long id) {
         this.id = id;
@@ -66,38 +74,34 @@ public class TAdmin {
     }
 
     /**
-     * @return user_name
+     * @return is_del
      */
-    public String getUserName() {
-        return userName;
+    public Integer getIsDel() {
+        return isDel;
     }
 
     /**
-     * @param userName
+     * @param isDel
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setIsDel(Integer isDel) {
+        this.isDel = isDel;
     }
 
     /**
-     * @return pwd
+     * 获取类别名称
+     *
+     * @return category_name - 类别名称
      */
-    public String getPwd() {
-        return pwd;
+    public String getCategoryName() {
+        return categoryName;
     }
 
     /**
-     * @param pwd
+     * 设置类别名称
+     *
+     * @param categoryName 类别名称
      */
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 }

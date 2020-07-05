@@ -3,14 +3,18 @@ package com.xdx.hello.spring.boot.common.controller;
 import com.github.pagehelper.PageHelper;
 import com.xdx.hello.spring.boot.common.dto.BaseResponse;
 import com.xdx.hello.spring.boot.common.dto.PageResponse;
+import com.xdx.hello.spring.boot.common.dto.QueryParam;
 import com.xdx.hello.spring.boot.common.service.BaseService;
+import com.xdx.hello.spring.boot.entity.TAdmin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**  
@@ -34,8 +38,8 @@ public abstract class BaseController<E extends BaseService<T>,T> {
 	@ResponseBody
 	@RequestMapping(value="/list",method = RequestMethod.GET )
 	protected BaseResponse<List<T>> list(HttpServletRequest request, T selectOption,
-										 @RequestParam(value = "pageSize",required = false) Integer pageSize,
-										 @RequestParam(value = "pageNum",required = false) Integer pageNum){
+										 @RequestParam(value = "limit",required = false) Integer pageSize,
+										 @RequestParam(value = "page",required = false) Integer pageNum){
 		if(pageNum != null && pageSize != null){
 			PageHelper.startPage(pageNum, pageSize);
 		}
@@ -44,6 +48,28 @@ public abstract class BaseController<E extends BaseService<T>,T> {
 	}
 
 	/**
+	 * 通用列表查询
+	 * @param queryParam 查询参数
+	 * @param pageSize 页大小
+	 * @param pageNum  页码
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="/lists",method = RequestMethod.GET )
+	protected BaseResponse<Map<String,Object>> listByQueryParam(HttpServletRequest request,QueryParam queryParam,
+										 @RequestParam(value = "limit",required = false) Integer pageSize,
+										 @RequestParam(value = "page",required = false) Integer pageNum){
+		if(pageNum != null && pageSize != null){
+			PageHelper.startPage(pageNum, pageSize);
+		}
+		List<T> result = service.selectListByQueryParam(queryParam);
+		Long size=service.selectCountByQueryParam(queryParam);
+		Map<String,Object> map=new HashMap<>();
+		map.put("items",result);
+		map.put("total",size);
+		return PageResponse.<Map<String,Object>>success4element(map);
+	}
+	/**
 	 * 通用更新操作
 	 * 注意body中需要包含主键
 	 * @param entity
@@ -51,10 +77,10 @@ public abstract class BaseController<E extends BaseService<T>,T> {
 	 * @return
 	 */
 	@ResponseBody
-	@RequestMapping(value="/{id}",method = RequestMethod.PUT)
+	@RequestMapping(value="/{id}",method = RequestMethod.POST)
 	public BaseResponse<?> modify(HttpServletRequest request, @RequestBody T entity, @PathVariable("id")String id){
 		service.updateSelectiveById(entity);
-		return BaseResponse.success();
+		return BaseResponse.success4element(entity);
 	}
 
 	/**
@@ -79,6 +105,32 @@ public abstract class BaseController<E extends BaseService<T>,T> {
 	@RequestMapping(value="/{id}",method = RequestMethod.DELETE)
 	public BaseResponse<?> del(HttpServletRequest request, @PathVariable String id){
 		service.deleteById(id);
-		return BaseResponse.success();
+		return BaseResponse.success4element(null);
+	}
+
+	/**
+	 * 通用隐式删除操作
+	 * @param id
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value="hidden/{id}",method = RequestMethod.POST)
+	public BaseResponse<?> hidden( @PathVariable long id){
+		service.hiddenById(id);
+		return BaseResponse.success4element(null);
+	}
+
+	/**
+	 * 通用的新增操作
+	 * @param entity
+	 * @return
+	 */
+	@PostMapping("/add")
+	public BaseResponse add(@RequestBody T entity){
+		if(service.insertSelective(entity)>0){
+			return BaseResponse.success4element(null);
+		}else{
+			return BaseResponse.fail(-1);
+		}
 	}
 }

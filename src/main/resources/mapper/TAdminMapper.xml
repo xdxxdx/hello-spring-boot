@@ -10,5 +10,6 @@
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
   </resultMap>
 </mapper>

@@ -91,6 +91,39 @@ public class BaseResponse<T> implements Serializable{
         return result;
     }
 
+    /**
+     * element-ui使用的返回码
+     * @param data
+     * @param <E>
+     * @return
+     */
+    public static <E> BaseResponse<E> success4element(E data) {
+        BaseResponse<E> result = new BaseResponse<E>(20000,"success",data);
+        return result;
+    }
+
+    /**
+     *
+     * @param message
+     * @param data
+     * @param <E>
+     * @return
+     */
+    public static <E> BaseResponse<E> success4element(String message,E data) {
+        BaseResponse<E> result = new BaseResponse<E>(20000,message,data);
+        return result;
+    }
+
+    /**
+     * 操作成功返回提醒
+     * @param successMsg
+     * @return
+     */
+//    public static BaseResponse<?>success(String successMsg){
+//        BaseResponse<Object> result = new BaseResponse<Object>(0,successMsg,null);
+//        return result;
+//    }
+
 
     /***
      * fail:操作失败时返回 <br/>

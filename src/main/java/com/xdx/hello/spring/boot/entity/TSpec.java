@@ -3,25 +3,25 @@ package com.xdx.hello.spring.boot.entity;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_admin")
-public class TAdmin {
+@Table(name = "t_spec")
+public class TSpec {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "create_time",insertable = false)
+    @Column(name = "commodity_id")
+    private Long commodityId;
+
+    @Column(name = "create_time")
     private Date createTime;
 
     @Column(name = "update_time")
     private Date updateTime;
 
-    @Column(name = "user_name")
-    private String userName;
+    @Column(name = "spec_name")
+    private String specName;
 
-    @Column(name = "role")
-    private String role;
-
-    private String pwd;
+    private Long price;
 
     /**
      * @return id
@@ -35,6 +35,20 @@ public class TAdmin {
      */
     public void setId(Long id) {
         this.id = id;
+    }
+
+    /**
+     * @return commodity_id
+     */
+    public Long getCommodityId() {
+        return commodityId;
+    }
+
+    /**
+     * @param commodityId
+     */
+    public void setCommodityId(Long commodityId) {
+        this.commodityId = commodityId;
     }
 
     /**
@@ -66,38 +80,30 @@ public class TAdmin {
     }
 
     /**
-     * @return user_name
+     * @return spec_name
      */
-    public String getUserName() {
-        return userName;
+    public String getSpecName() {
+        return specName;
     }
 
     /**
-     * @param userName
+     * @param specName
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setSpecName(String specName) {
+        this.specName = specName;
     }
 
     /**
-     * @return pwd
+     * @return price
      */
-    public String getPwd() {
-        return pwd;
+    public Long getPrice() {
+        return price;
     }
 
     /**
-     * @param pwd
+     * @param price
      */
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
+    public void setPrice(Long price) {
+        this.price = price;
     }
 }

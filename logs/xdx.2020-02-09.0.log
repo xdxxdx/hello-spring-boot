@@ -1,0 +1,44 @@
+18:24:20.755 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Starting HelloSpringBootApplication on PC-2019HWL with PID 8852 (started by Administrator in D:\xdxgit\微服务学习\hello-spring-boot)
+18:24:20.755 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - The following profiles are active: test
+18:24:22.096 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.xdx.hello.spring.boot]' package. Please check your configuration.
+18:24:23.427 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:24:23.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:24:23.443 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:24:23.443 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:24:23.583 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:24:23.583 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2735 ms
+18:24:23.724 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+18:24:24.738 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:24:25.065 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:24:25.065 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:24:25.081 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:24:25.081 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:24:25.097 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:24:25.097 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:24:25.112 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:24:25.112 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接开始前
+18:24:25.128 [main] INFO  c.x.h.spring.boot.druid.CustomFilter - 连接连接结束后
+18:24:25.128 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:24:25.736 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:24:26.048 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:24:26.079 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+18:24:26.079 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - Started HelloSpringBootApplication in 6.424 seconds (JVM running for 7.533)
+18:24:26.079 [main] INFO  c.x.h.s.b.HelloSpringBootApplication -  xdx is test
+18:24:26.079 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - xdx,lqf
+18:24:26.079 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据源：{
+	CreateTime:"2020-02-09 18:24:23",
+	ActiveCount:0,
+	PoolingCount:5,
+	CreateCount:5,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+		{ID:198438900, ConnectTime:"2020-02-09 18:24:25", UseCount:0, LastActiveTime:"2020-02-09 18:24:25"},
+		{ID:1611714769, ConnectTime:"2020-02-09 18:24:25", UseCount:0, LastActiveTime:"2020-02-09 18:24:25"},
+		{ID:1496631838, ConnectTime:"2020-02-09 18:24:25", UseCount:0, LastActiveTime:"2020-02-09 18:24:25"},
+		{ID:1397282876, ConnectTime:"2020-02-09 18:24:25", UseCount:0, LastActiveTime:"2020-02-09 18:24:25"},
+		{ID:1198531054, ConnectTime:"2020-02-09 18:24:25", UseCount:0, LastActiveTime:"2020-02-09 18:24:25"}
+	]
+}
+18:24:26.095 [main] INFO  c.x.h.s.b.HelloSpringBootApplication - 数据连接com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@477021ee
