@@ -24,7 +24,7 @@
         <pagehelper.version>1.2.3</pagehelper.version>
         <common-lang3.version>3.8.1</common-lang3.version>
         <fast-json.version>1.2.47</fast-json.version>
-        <jackjson.version>2.11.1</jackjson.version>
+        <jackjson.version>2.13.4.1</jackjson.version>
     </properties>
 
     <dependencies>
